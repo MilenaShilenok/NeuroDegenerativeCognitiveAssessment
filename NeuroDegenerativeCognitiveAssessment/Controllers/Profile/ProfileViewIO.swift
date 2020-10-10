@@ -9,9 +9,9 @@
 import Foundation
 
 protocol ProfileViewInput: class {
-    
+    func displayProfile(user: User)
 }
 
 protocol ProfileViewOutput {
-    
+    func fillProfile()
 }

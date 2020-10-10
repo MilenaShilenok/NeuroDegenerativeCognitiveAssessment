@@ -15,7 +15,7 @@ enum SystemError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .emptyFields:
-            return "Fill in all the fields"
+            return String.Error.fillAllFields
         case .custom(let message):
             return message
         }

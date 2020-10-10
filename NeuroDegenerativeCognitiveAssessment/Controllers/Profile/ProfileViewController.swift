@@ -20,5 +20,12 @@ class ProfileViewController: UIViewController, ProfileViewInput {
     override func viewDidLoad() {
         super .viewDidLoad()
         output = ProfilePresenter(view: self)
+        output.fillProfile()
+    }
+    
+    func displayProfile(user: User) {
+        nameLabel.text = user.name
+        ageLabel.text = user.age
+        emailLabel.text = user.email
     }
 }

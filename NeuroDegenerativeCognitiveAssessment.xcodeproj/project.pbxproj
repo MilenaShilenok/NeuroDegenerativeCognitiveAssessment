@@ -10,6 +10,10 @@
 		F328E0D4252E0E6C002F3D42 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0D3252E0E6C002F3D42 /* ProfileViewController.swift */; };
 		F328E0D6252E0E82002F3D42 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0D5252E0E82002F3D42 /* ProfilePresenter.swift */; };
 		F328E0D8252E0E93002F3D42 /* ProfileViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0D7252E0E93002F3D42 /* ProfileViewIO.swift */; };
+		F328E0E325306111002F3D42 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0E225306110002F3D42 /* BaseViewController.swift */; };
+		F328E0E725306FF6002F3D42 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0E625306FF6002F3D42 /* String.swift */; };
+		F328E0EF2531C87D002F3D42 /* ProfileServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0EE2531C87D002F3D42 /* ProfileServiceImp.swift */; };
+		F328E0F12531C891002F3D42 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0F02531C891002F3D42 /* ProfileService.swift */; };
 		F3392F692529821E0005ECDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F682529821E0005ECDF /* AppDelegate.swift */; };
 		F3392F6B2529821E0005ECDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F6A2529821E0005ECDF /* SceneDelegate.swift */; };
 		F3392F702529821E0005ECDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3392F6E2529821E0005ECDF /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		F328E0D3252E0E6C002F3D42 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F328E0D5252E0E82002F3D42 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		F328E0D7252E0E93002F3D42 /* ProfileViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewIO.swift; sourceTree = "<group>"; };
+		F328E0E225306110002F3D42 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F328E0E625306FF6002F3D42 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F328E0EE2531C87D002F3D42 /* ProfileServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceImp.swift; sourceTree = "<group>"; };
+		F328E0F02531C891002F3D42 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		F3392F652529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroDegenerativeCognitiveAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3392F682529821E0005ECDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3392F6A2529821E0005ECDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +84,7 @@
 		F328E0D9252E2F20002F3D42 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3392F8525299AC20005ECDF /* Input */,
+				F3392F8525299AC20005ECDF /* Entry */,
 				F328E0D2252E0D2B002F3D42 /* Profile */,
 			);
 			path = Controllers;
@@ -87,6 +95,39 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F328E0E425306F90002F3D42 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3392F8A2529A1F70005ECDF /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F328E0E525306FA4002F3D42 /* Constans */ = {
+			isa = PBXGroup;
+			children = (
+				F328E0E625306FF6002F3D42 /* String.swift */,
+			);
+			path = Constans;
+			sourceTree = "<group>";
+		};
+		F328E0E8253077C6002F3D42 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F328E0EB25307823002F3D42 /* Implementation */,
+				F328E0F02531C891002F3D42 /* ProfileService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F328E0EB25307823002F3D42 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F328E0EE2531C87D002F3D42 /* ProfileServiceImp.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		F3392F5C2529821E0005ECDF = {
@@ -108,8 +149,11 @@
 		F3392F672529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				F328E0DA252E2F36002F3D42 /* Views */,
+				F328E0E8253077C6002F3D42 /* Service */,
 				F328E0D9252E2F20002F3D42 /* Controllers */,
+				F328E0E425306F90002F3D42 /* Entity */,
+				F328E0DA252E2F36002F3D42 /* Views */,
+				F328E0E525306FA4002F3D42 /* Constans */,
 				F3392F682529821E0005ECDF /* AppDelegate.swift */,
 				F3392F6A2529821E0005ECDF /* SceneDelegate.swift */,
 				F3392F8C2529A7B50005ECDF /* Storyboards */,
@@ -117,19 +161,19 @@
 				F3392F79252982230005ECDF /* Info.plist */,
 				F3392F712529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.xcdatamodeld */,
 				F3392F8625299F610005ECDF /* SystemError.swift */,
-				F3392F8A2529A1F70005ECDF /* User.swift */,
+				F328E0E225306110002F3D42 /* BaseViewController.swift */,
 			);
 			path = NeuroDegenerativeCognitiveAssessment;
 			sourceTree = "<group>";
 		};
-		F3392F8525299AC20005ECDF /* Input */ = {
+		F3392F8525299AC20005ECDF /* Entry */ = {
 			isa = PBXGroup;
 			children = (
 				F3392F7F2529991A0005ECDF /* EntryViewController.swift */,
 				F3392F8125299AAB0005ECDF /* EntryPresenter.swift */,
 				F3392F8325299ABB0005ECDF /* EntryViewIO.swift */,
 			);
-			path = Input;
+			path = Entry;
 			sourceTree = "<group>";
 		};
 		F3392F8C2529A7B50005ECDF /* Storyboards */ = {
@@ -223,14 +267,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3392F8725299F610005ECDF /* SystemError.swift in Sources */,
+				F328E0E725306FF6002F3D42 /* String.swift in Sources */,
 				F3392F8225299AAB0005ECDF /* EntryPresenter.swift in Sources */,
 				F3392F8425299ABB0005ECDF /* EntryViewIO.swift in Sources */,
 				F3392F802529991A0005ECDF /* EntryViewController.swift in Sources */,
 				F3392F692529821E0005ECDF /* AppDelegate.swift in Sources */,
+				F328E0E325306111002F3D42 /* BaseViewController.swift in Sources */,
 				F3392F6B2529821E0005ECDF /* SceneDelegate.swift in Sources */,
 				F328E0D4252E0E6C002F3D42 /* ProfileViewController.swift in Sources */,
 				F328E0D8252E0E93002F3D42 /* ProfileViewIO.swift in Sources */,
 				F3392F8B2529A1F70005ECDF /* User.swift in Sources */,
+				F328E0F12531C891002F3D42 /* ProfileService.swift in Sources */,
+				F328E0EF2531C87D002F3D42 /* ProfileServiceImp.swift in Sources */,
 				F328E0D6252E0E82002F3D42 /* ProfilePresenter.swift in Sources */,
 				F3392F732529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.xcdatamodeld in Sources */,
 			);

@@ -13,5 +13,5 @@ protocol EntryViewInput: class {
 }
 
 protocol EntryViewOutput {
-    func save(name: String, age: String, email: String)
+    func save(user: User)
 }

@@ -26,12 +26,21 @@ class EntryViewController: UIViewController, EntryViewInput {
         let name = nameTextField.text ?? ""
         let email = emailTextField.text ?? ""
         let age = ageTextField.text ?? ""
-        /*guard let age = Int(ageTextField.text ?? "") else {
+        /*let ageStr = Int(ageTextField.text ?? "")
+         if let ageInt = ageStr {} else {
             show(error: SystemError.custom("error"))
         }*/
-        
-        output.save(name: name, age: age, email: email)
-        
+       
+        let user = User(name: name, age: age, email: email)
+        output.save(user: user)
+        openNextScreen()
+    }
+    
+    func openNextScreen() {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ProfileViewController")
+        show(vc, sender: nil)
+        //present(vc, animated: true, completion: nil)
     }
     
     func show(error: Error) {

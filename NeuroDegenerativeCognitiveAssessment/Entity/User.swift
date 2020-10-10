@@ -9,9 +9,9 @@
 import Foundation
 import CoreData
 
-struct User {
+struct User: Codable {
     let name: String
-    let age: Int
+    let age: String
     let email: String
     
    /* var persistentContainer: NSPersistentContainer = {

@@ -11,8 +11,17 @@ import Foundation
 class ProfilePresenter: ProfileViewOutput {
     
     weak var view: ProfileViewInput!
+    let service: ProfileService = ProfileServiceImp.instance
     
     init (view: ProfileViewInput) {
         self.view = view
+    }
+    
+    func fillProfile() {
+        if let user = service.getData() {
+            view.displayProfile(user: user)
+        } else {
+            
+        }
     }
 }
