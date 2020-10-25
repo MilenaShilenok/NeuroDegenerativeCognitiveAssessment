@@ -1,88 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cQm-w0-bgH">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3jT-ki-ZSK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Entry View Controller-->
-        <scene sceneID="HgT-LH-yMG">
-            <objects>
-                <viewController id="cQm-w0-bgH" customClass="EntryViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DTP-T9-AQH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="lVn-hf-0AW">
-                                <rect key="frame" x="30" y="271.33333333333331" width="315" height="172"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your full name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RoZ-E2-0YG">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your age:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUg-f8-oEf">
-                                        <rect key="frame" x="0.0" y="69" width="315" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0Y-6u-Ab2">
-                                        <rect key="frame" x="0.0" y="138" width="315" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-Rj-0LW">
-                                <rect key="frame" x="30" y="689" width="315" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="CONTINUE"/>
-                                <connections>
-                                    <action selector="registerButton:" destination="cQm-w0-bgH" eventType="touchUpInside" id="SoW-u5-a3L"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started, we need some of your basic details:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIG-09-d62">
-                                <rect key="frame" x="30" y="200.66666666666666" width="315" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Neuro Degenerative Cognitive Assessment App!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-PE-5pl">
-                                <rect key="frame" x="30" y="74" width="315" height="96.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="lVn-hf-0AW" firstAttribute="top" secondItem="rIG-09-d62" secondAttribute="bottom" constant="30" id="0im-aE-nTd"/>
-                            <constraint firstItem="lVO-PE-5pl" firstAttribute="top" secondItem="iUE-7H-KUi" secondAttribute="top" constant="30" id="4Fl-jY-q1D"/>
-                            <constraint firstItem="lVn-hf-0AW" firstAttribute="centerX" secondItem="DTP-T9-AQH" secondAttribute="centerX" id="ANk-TC-a3j"/>
-                            <constraint firstItem="iUE-7H-KUi" firstAttribute="bottom" secondItem="OQe-Rj-0LW" secondAttribute="bottom" constant="50" id="Fin-WK-HPh"/>
-                            <constraint firstItem="rIG-09-d62" firstAttribute="top" secondItem="lVO-PE-5pl" secondAttribute="bottom" constant="30" id="UzZ-v7-zme"/>
-                            <constraint firstItem="OQe-Rj-0LW" firstAttribute="leading" secondItem="iUE-7H-KUi" secondAttribute="leading" constant="30" id="YAv-18-CFT"/>
-                            <constraint firstItem="lVO-PE-5pl" firstAttribute="leading" secondItem="DTP-T9-AQH" secondAttribute="leading" constant="30" id="b0v-vG-PGy"/>
-                            <constraint firstItem="OQe-Rj-0LW" firstAttribute="centerX" secondItem="DTP-T9-AQH" secondAttribute="centerX" id="gMs-Ju-iTi"/>
-                            <constraint firstItem="rIG-09-d62" firstAttribute="leading" secondItem="iUE-7H-KUi" secondAttribute="leading" constant="30" id="mGY-ei-iIS"/>
-                            <constraint firstItem="lVn-hf-0AW" firstAttribute="leading" secondItem="iUE-7H-KUi" secondAttribute="leading" constant="30" id="qNj-Y4-Vym"/>
-                            <constraint firstItem="rIG-09-d62" firstAttribute="centerX" secondItem="DTP-T9-AQH" secondAttribute="centerX" id="xtk-Xe-A8G"/>
-                            <constraint firstItem="lVO-PE-5pl" firstAttribute="centerX" secondItem="DTP-T9-AQH" secondAttribute="centerX" id="y4u-Nu-CAG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="iUE-7H-KUi"/>
-                    </view>
-                    <connections>
-                        <outlet property="ageTextField" destination="aUg-f8-oEf" id="Glp-H7-yzo"/>
-                        <outlet property="emailTextField" destination="w0Y-6u-Ab2" id="VKI-OB-qU4"/>
-                        <outlet property="nameTextField" destination="RoZ-E2-0YG" id="Tzd-dm-jiL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m3A-Wi-fXm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3175" y="-44"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MCY-Fs-NJV">
             <objects>

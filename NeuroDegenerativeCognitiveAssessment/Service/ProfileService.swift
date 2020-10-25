@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ProfileService {
-    func remove()
-    func save(user: User)
-    func getData() -> User?
+    func removeProfile()
+    func save(profile: Profile) throws
+    var profile: Profile? { get }
 }

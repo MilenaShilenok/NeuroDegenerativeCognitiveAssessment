@@ -10,35 +10,48 @@ import Foundation
 
 class ProfileServiceImp: ProfileService {
     
-    static let instance = ProfileServiceImp()
-    private init() {}
-    
-    func save(user: User) {
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(user) {
-            let defaults = UserDefaults.standard
-            defaults.set(encoded, forKey: String.Key.savedUser)
-        }
-    }
-    
-    // TODO: if "get" -> return
-    func getData() -> User? {
-        //var user: User
-        let defaults = UserDefaults.standard
-        if let savedUser = defaults.object(forKey: String.Key.savedUser) as? Data {
-            let decoder = JSONDecoder()
-            if let loadedUser = try? decoder.decode(User.self, from: savedUser) {
-               // user = loadedUser
-                return loadedUser
-            }
-        }
-        return nil
-       // return user
-    }
-    
-    func remove() {
-        let defaults = UserDefaults.standard
-        defaults.removeObject(forKey: String.Key.savedUser)
 
+    private let defaults = UserDefaults.standard
+    
+    var profile: Profile?
+
+    var hasProfile: Bool {
+        return profile != nil
     }
+    
+    static let instance = ProfileServiceImp()
+    
+    private init() {
+        do {
+            profile = try getProfile()
+        } catch {
+            assertionFailure(error.localizedDescription)
+        }
+    }
+
+    func save(profile: Profile) throws {
+        let encoder = JSONEncoder()
+        let encoded = try encoder.encode(profile)
+        defaults.set(encoded, forKey: UserDefaults.Key.savedUser)
+        self.profile = profile
+    }
+    
+    private func getProfile() throws -> Profile? {
+        guard let savedUser = defaults.object(forKey: UserDefaults.Key.savedUser) as? Data else {
+            return nil
+        }
+
+        let decoder = JSONDecoder()
+        let loadedUser = try decoder.decode(Profile.self, from: savedUser)
+        
+        profile = loadedUser
+        return loadedUser
+    }
+    
+    func removeProfile() {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: UserDefaults.Key.savedUser)
+        profile = nil
+    }
+
 }

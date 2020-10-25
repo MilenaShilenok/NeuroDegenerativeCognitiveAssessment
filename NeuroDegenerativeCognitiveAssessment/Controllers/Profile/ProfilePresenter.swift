@@ -11,17 +11,26 @@ import Foundation
 class ProfilePresenter: ProfileViewOutput {
     
     weak var view: ProfileViewInput!
-    let service: ProfileService = ProfileServiceImp.instance
+    let bank = QuestionsBank.instance
+    
+    let profileService: ProfileService = ProfileServiceImp.instance
     
     init (view: ProfileViewInput) {
         self.view = view
     }
     
     func fillProfile() {
-        if let user = service.getData() {
-            view.displayProfile(user: user)
+        if let profile = profileService.profile {
+            view.displayProfile(profile: profile)
         } else {
-            
+            view.show(error: SystemError.profileNotFound) 
         }
     }
+    
+    func deleteProfile() {
+        profileService.removeProfile()
+    }
+    
+    
+    
 }

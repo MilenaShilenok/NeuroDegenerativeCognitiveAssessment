@@ -22,32 +22,21 @@ class EntryViewController: UIViewController, EntryViewInput {
         output = EntryPresenter(view: self)
     }
     
-    @IBAction func registerButton(_ sender: Any) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        nameTextField.text = ""
+        ageTextField.text = ""
+        emailTextField.text = ""
+    }
+    
+    @IBAction func saveProfileButton(_ sender: Any) {
         let name = nameTextField.text ?? ""
         let email = emailTextField.text ?? ""
-        let age = ageTextField.text ?? ""
-        /*let ageStr = Int(ageTextField.text ?? "")
-         if let ageInt = ageStr {} else {
-            show(error: SystemError.custom("error"))
-        }*/
+        let age = Int(ageTextField.text ?? "") ?? 0
        
-        let user = User(name: name, age: age, email: email)
-        output.save(user: user)
-        openNextScreen()
+        let profile = Profile(name: name, age: age, email: email)
+        output.save(profile: profile)
+        
+        AppRouter.shared.openModule(type: .profile)
     }
-    
-    func openNextScreen() {
-        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "ProfileViewController")
-        show(vc, sender: nil)
-        //present(vc, animated: true, completion: nil)
-    }
-    
-    func show(error: Error) {
-        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-    }
-    
 }

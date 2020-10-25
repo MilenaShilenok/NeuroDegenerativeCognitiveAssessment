@@ -9,13 +9,17 @@
 import Foundation
 
 enum SystemError: LocalizedError {
-    case emptyFields
+    
+    case somethingWentWrong
+    case profileNotFound
     case custom(String)
   
     var errorDescription: String? {
         switch self {
-        case .emptyFields:
-            return String.Error.fillAllFields
+        case .somethingWentWrong:
+            return String.Error.somethingWentWrong
+        case .profileNotFound:
+            return String.Error.profileNotFound
         case .custom(let message):
             return message
         }

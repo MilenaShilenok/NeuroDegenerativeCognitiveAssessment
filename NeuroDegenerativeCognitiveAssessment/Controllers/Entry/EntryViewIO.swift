@@ -8,10 +8,10 @@
 
 import Foundation
 
-protocol EntryViewInput: class {
-    func show(error: Error)
+protocol EntryViewInput: class, UIViewInput {
+    
 }
 
 protocol EntryViewOutput {
-    func save(user: User)
+    func save(profile: Profile)
 }

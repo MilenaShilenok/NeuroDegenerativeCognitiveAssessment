@@ -8,10 +8,11 @@
 
 import Foundation
 
-protocol ProfileViewInput: class {
-    func displayProfile(user: User)
+protocol ProfileViewInput: class, UIViewInput {
+    func displayProfile(profile: Profile)
 }
 
 protocol ProfileViewOutput {
     func fillProfile()
+    func deleteProfile()
 }
