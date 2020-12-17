@@ -27,7 +27,9 @@
         <scene sceneID="436-VY-Lo1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Mc-st-3vC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="infoIcon" id="OJK-uh-OOI"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QBA-I2-bDk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,4 +44,7 @@
             <point key="canvasLocation" x="266.66666666666669" y="105.80357142857143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="infoIcon" width="24" height="24"/>
+    </resources>
 </document>

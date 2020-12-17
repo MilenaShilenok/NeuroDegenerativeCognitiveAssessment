@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31DE769255ED8AE0057A867 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DE768255ED8AD0057A867 /* SelectableButton.swift */; };
+		F31DE76B255F05F80057A867 /* SelectableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DE76A255F05F80057A867 /* SelectableImage.swift */; };
+		F32362D52580F8DA00D3C6C9 /* FinishQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32362D42580F8DA00D3C6C9 /* FinishQuizViewController.swift */; };
 		F328E0D4252E0E6C002F3D42 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0D3252E0E6C002F3D42 /* ProfileViewController.swift */; };
 		F328E0D6252E0E82002F3D42 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0D5252E0E82002F3D42 /* ProfilePresenter.swift */; };
 		F328E0D8252E0E93002F3D42 /* ProfileViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0D7252E0E93002F3D42 /* ProfileViewIO.swift */; };
@@ -30,24 +33,56 @@
 		F3392F8725299F610005ECDF /* SystemError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F8625299F610005ECDF /* SystemError.swift */; };
 		F3392F8B2529A1F70005ECDF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F8A2529A1F70005ECDF /* Profile.swift */; };
 		F3392F8F2529A8630005ECDF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3392F8E2529A8630005ECDF /* Profile.storyboard */; };
+		F347C33A254899C2008486F9 /* HistoryServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C339254899C2008486F9 /* HistoryServiceImp.swift */; };
+		F347C33C25496416008486F9 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C33B25496416008486F9 /* HistoryService.swift */; };
+		F347C3412552AF29008486F9 /* ShortAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C3402552AF29008486F9 /* ShortAnswerViewController.swift */; };
+		F347C3432552AF40008486F9 /* ShortAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C3422552AF40008486F9 /* ShortAnswerPresenter.swift */; };
+		F347C3452552AF52008486F9 /* ShortAnswerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C3442552AF52008486F9 /* ShortAnswerIO.swift */; };
 		F34A9127252DD7F000FE71DB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A9126252DD7F000FE71DB /* History.storyboard */; };
 		F34A9129252DD8C800FE71DB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A9128252DD8C800FE71DB /* Home.storyboard */; };
 		F34A912B252DD90C00FE71DB /* Export.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A912A252DD90C00FE71DB /* Export.storyboard */; };
 		F34A912D252DD91A00FE71DB /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A912C252DD91A00FE71DB /* Information.storyboard */; };
-		F383639625349A6700411ADE /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639525349A6700411ADE /* UserDefaults.swift */; };
+		F34CA49325656E9C00C990DF /* QuestionPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CA49225656E9C00C990DF /* QuestionPartTwo.swift */; };
+		F362AD5F256E8D290024276B /* SubsidiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */; };
+		F362AD6325710A170024276B /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362AD6225710A170024276B /* Quiz.storyboard */; };
+		F362AD6525710D690024276B /* BeginQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD6425710D690024276B /* BeginQuestionnaireViewController.swift */; };
+		F362AD68257135B70024276B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD67257135B70024276B /* Quiz.swift */; };
+		F362AD6A2571382A0024276B /* AnswerPartOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD692571382A0024276B /* AnswerPartOne.swift */; };
+		F362AD6C257138420024276B /* PassedTestPartOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD6B257138420024276B /* PassedTestPartOne.swift */; };
+		F362AD6E257138520024276B /* PassedTestPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD6D257138520024276B /* PassedTestPartTwo.swift */; };
+		F362AD70257138620024276B /* PassedTestPartThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD6F257138620024276B /* PassedTestPartThree.swift */; };
+		F362AD7225737A2E0024276B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD7125737A2E0024276B /* Double.swift */; };
+		F363002C257E68C600CDA770 /* FormationOfQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363002B257E68C600CDA770 /* FormationOfQuestions.swift */; };
+		F363002E2580ECF600CDA770 /* UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363002D2580ECF600CDA770 /* UIProgressView.swift */; };
+		F37732182589AFEB0073A3CF /* NoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37732172589AFEB0073A3CF /* NoViewController.swift */; };
+		F3773220258A642A0073A3CF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377321F258A642A0073A3CF /* UIView.swift */; };
+		F3791A0C256808AE00AE35F0 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3791A0B256808AE00AE35F0 /* Option.swift */; };
+		F3791A0E25680BEC00AE35F0 /* AnswerPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3791A0D25680BEC00AE35F0 /* AnswerPartTwo.swift */; };
+		F383639625349A6700411ADE /* UserDefaults+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639525349A6700411ADE /* UserDefaults+Key.swift */; };
 		F383639925372AD900411ADE /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639825372AD900411ADE /* ValidationError.swift */; };
 		F383639B2537316E00411ADE /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639A2537316E00411ADE /* DefaultButton.swift */; };
 		F383639D2537320F00411ADE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639C2537320F00411ADE /* UIColor.swift */; };
 		F383639F2539A7EC00411ADE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639E2539A7EC00411ADE /* AppRouter.swift */; };
 		F38363A6253B0F2500411ADE /* FillingProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38363A5253B0F2500411ADE /* FillingProfile.storyboard */; };
-		F38363A82540061D00411ADE /* DefaultButtonForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363A72540061D00411ADE /* DefaultButtonForTest.swift */; };
+		F38363A82540061D00411ADE /* ButtonForQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363A72540061D00411ADE /* ButtonForQuiz.swift */; };
 		F38363AA254027B000411ADE /* QuestionsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363A9254027B000411ADE /* QuestionsBank.swift */; };
 		F38363AC2540582200411ADE /* SelfEfficacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363AB2540582200411ADE /* SelfEfficacyViewController.swift */; };
 		F38363AF2540585400411ADE /* SelfEfficacyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363AE2540585400411ADE /* SelfEfficacyPresenter.swift */; };
 		F38363B12540587D00411ADE /* SelfEfficacyViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363B02540587D00411ADE /* SelfEfficacyViewIO.swift */; };
+		F3AE1983258B888D00061FFF /* FinishQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE1982258B888C00061FFF /* FinishQuizPresenter.swift */; };
+		F3AE1986258B88A600061FFF /* FinishQuizIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE1985258B88A600061FFF /* FinishQuizIO.swift */; };
+		F3C0BF1D257BA77300C38C96 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C0BF1C257BA77300C38C96 /* TabBarController.swift */; };
+		F3CC15FB2577D58900E529F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC15FA2577D58900E529F2 /* HomeViewController.swift */; };
+		F3CC15FD2577E27C00E529F2 /* LongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC15FC2577E27C00E529F2 /* LongAnswerViewController.swift */; };
+		F3CC15FF2577E2EB00E529F2 /* LongAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC15FE2577E2EB00E529F2 /* LongAnswerPresenter.swift */; };
+		F3CC16012577E32E00E529F2 /* LongAnswerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC16002577E32E00E529F2 /* LongAnswerIO.swift */; };
+		F3CC16032577E96600E529F2 /* UIButton+setBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC16022577E96600E529F2 /* UIButton+setBackgroundColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31DE768255ED8AD0057A867 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		F31DE76A255F05F80057A867 /* SelectableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableImage.swift; sourceTree = "<group>"; };
+		F32362D42580F8DA00D3C6C9 /* FinishQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizViewController.swift; sourceTree = "<group>"; };
 		F328E0D3252E0E6C002F3D42 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F328E0D5252E0E82002F3D42 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		F328E0D7252E0E93002F3D42 /* ProfileViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewIO.swift; sourceTree = "<group>"; };
@@ -73,21 +108,50 @@
 		F3392F8625299F610005ECDF /* SystemError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemError.swift; sourceTree = "<group>"; };
 		F3392F8A2529A1F70005ECDF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F3392F8E2529A8630005ECDF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		F347C339254899C2008486F9 /* HistoryServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryServiceImp.swift; sourceTree = "<group>"; };
+		F347C33B25496416008486F9 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		F347C3402552AF29008486F9 /* ShortAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAnswerViewController.swift; sourceTree = "<group>"; };
+		F347C3422552AF40008486F9 /* ShortAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAnswerPresenter.swift; sourceTree = "<group>"; };
+		F347C3442552AF52008486F9 /* ShortAnswerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAnswerIO.swift; sourceTree = "<group>"; };
 		F34A9126252DD7F000FE71DB /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		F34A9128252DD8C800FE71DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F34A912A252DD90C00FE71DB /* Export.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Export.storyboard; sourceTree = "<group>"; };
 		F34A912C252DD91A00FE71DB /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
-		F383639525349A6700411ADE /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		F34CA49225656E9C00C990DF /* QuestionPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPartTwo.swift; sourceTree = "<group>"; };
+		F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidiaryViewController.swift; sourceTree = "<group>"; };
+		F362AD6225710A170024276B /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		F362AD6425710D690024276B /* BeginQuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuestionnaireViewController.swift; sourceTree = "<group>"; };
+		F362AD67257135B70024276B /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		F362AD692571382A0024276B /* AnswerPartOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerPartOne.swift; sourceTree = "<group>"; };
+		F362AD6B257138420024276B /* PassedTestPartOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PassedTestPartOne.swift; path = Constans/PassedTestPartOne.swift; sourceTree = "<group>"; };
+		F362AD6D257138520024276B /* PassedTestPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassedTestPartTwo.swift; sourceTree = "<group>"; };
+		F362AD6F257138620024276B /* PassedTestPartThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassedTestPartThree.swift; sourceTree = "<group>"; };
+		F362AD7125737A2E0024276B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		F363002B257E68C600CDA770 /* FormationOfQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormationOfQuestions.swift; sourceTree = "<group>"; };
+		F363002D2580ECF600CDA770 /* UIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressView.swift; sourceTree = "<group>"; };
+		F37732172589AFEB0073A3CF /* NoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoViewController.swift; sourceTree = "<group>"; };
+		F377321F258A642A0073A3CF /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F3791A0B256808AE00AE35F0 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		F3791A0D25680BEC00AE35F0 /* AnswerPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerPartTwo.swift; sourceTree = "<group>"; };
+		F383639525349A6700411ADE /* UserDefaults+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
 		F383639825372AD900411ADE /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		F383639A2537316E00411ADE /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		F383639C2537320F00411ADE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F383639E2539A7EC00411ADE /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		F38363A5253B0F2500411ADE /* FillingProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FillingProfile.storyboard; sourceTree = "<group>"; };
-		F38363A72540061D00411ADE /* DefaultButtonForTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonForTest.swift; sourceTree = "<group>"; };
+		F38363A72540061D00411ADE /* ButtonForQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonForQuiz.swift; sourceTree = "<group>"; };
 		F38363A9254027B000411ADE /* QuestionsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBank.swift; sourceTree = "<group>"; };
 		F38363AB2540582200411ADE /* SelfEfficacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfEfficacyViewController.swift; sourceTree = "<group>"; };
 		F38363AE2540585400411ADE /* SelfEfficacyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfEfficacyPresenter.swift; sourceTree = "<group>"; };
 		F38363B02540587D00411ADE /* SelfEfficacyViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfEfficacyViewIO.swift; sourceTree = "<group>"; };
+		F3AE1982258B888C00061FFF /* FinishQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizPresenter.swift; sourceTree = "<group>"; };
+		F3AE1985258B88A600061FFF /* FinishQuizIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizIO.swift; sourceTree = "<group>"; };
+		F3C0BF1C257BA77300C38C96 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F3CC15FA2577D58900E529F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3CC15FC2577E27C00E529F2 /* LongAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerViewController.swift; sourceTree = "<group>"; };
+		F3CC15FE2577E2EB00E529F2 /* LongAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerPresenter.swift; sourceTree = "<group>"; };
+		F3CC16002577E32E00E529F2 /* LongAnswerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerIO.swift; sourceTree = "<group>"; };
+		F3CC16022577E96600E529F2 /* UIButton+setBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setBackgroundColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,33 +175,50 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		F328E0D9252E2F20002F3D42 /* Controllers */ = {
+		F328E0D9252E2F20002F3D42 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F3C0BF1C257BA77300C38C96 /* TabBarController.swift */,
+				F3CC15FA2577D58900E529F2 /* HomeViewController.swift */,
+				F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */,
+				F362AD6425710D690024276B /* BeginQuestionnaireViewController.swift */,
+				F3AE1989258B8A3F00061FFF /* DisplayAverageScore */,
+				F362AD662571169F0024276B /* LongAnswer */,
+				F347C33F2552AEF4008486F9 /* ShortAnswer */,
 				F38363AD2540582B00411ADE /* SelfEfficacy */,
 				F328E0F625324774002F3D42 /* Edit Profile */,
 				F3392F8525299AC20005ECDF /* Entry */,
 				F328E0D2252E0D2B002F3D42 /* Profile */,
 			);
-			path = Controllers;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		F328E0DA252E2F36002F3D42 /* Views */ = {
+		F328E0DA252E2F36002F3D42 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				F328E0F22532312D002F3D42 /* UIViewInput.swift */,
 				F383639A2537316E00411ADE /* DefaultButton.swift */,
-				F38363A72540061D00411ADE /* DefaultButtonForTest.swift */,
+				F38363A72540061D00411ADE /* ButtonForQuiz.swift */,
+				F31DE768255ED8AD0057A867 /* SelectableButton.swift */,
+				F31DE76A255F05F80057A867 /* SelectableImage.swift */,
+				F363002D2580ECF600CDA770 /* UIProgressView.swift */,
 			);
-			path = Views;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F328E0E425306F90002F3D42 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				F328E0FD2532E8D6002F3D42 /* Errros */,
+				F328E0E525306FA4002F3D42 /* Constans */,
+				F362AD692571382A0024276B /* AnswerPartOne.swift */,
+				F362AD6B257138420024276B /* PassedTestPartOne.swift */,
+				F362AD6D257138520024276B /* PassedTestPartTwo.swift */,
+				F362AD6F257138620024276B /* PassedTestPartThree.swift */,
+				F3791A0D25680BEC00AE35F0 /* AnswerPartTwo.swift */,
 				F3392F8A2529A1F70005ECDF /* Profile.swift */,
-				F38363A9254027B000411ADE /* QuestionsBank.swift */,
+				F3791A0B256808AE00AE35F0 /* Option.swift */,
+				F362AD67257135B70024276B /* Quiz.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -156,6 +237,7 @@
 			children = (
 				F328E0EB25307823002F3D42 /* Implementation */,
 				F328E0F02531C891002F3D42 /* ProfileService.swift */,
+				F347C33B25496416008486F9 /* HistoryService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -164,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				F328E0EE2531C87D002F3D42 /* ProfileServiceImp.swift */,
+				F347C339254899C2008486F9 /* HistoryServiceImp.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -206,14 +289,11 @@
 		F3392F672529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				F328E0E8253077C6002F3D42 /* Service */,
-				F328E0D9252E2F20002F3D42 /* Controllers */,
-				F328E0E425306F90002F3D42 /* Entity */,
-				F383639725349AA300411ADE /* Extensions */,
-				F328E0DA252E2F36002F3D42 /* Views */,
-				F328E0E525306FA4002F3D42 /* Constans */,
-				F3392F8C2529A7B50005ECDF /* Storyboards */,
 				F38363A42539BF2800411ADE /* App */,
+				F3791A13256812BE00AE35F0 /* BusinesLogic */,
+				F383639725349AA300411ADE /* Extensions */,
+				F3791A142568131A00AE35F0 /* Views */,
+				F3392F8C2529A7B50005ECDF /* Storyboards */,
 				F3392F74252982230005ECDF /* Assets.xcassets */,
 				F3392F79252982230005ECDF /* Info.plist */,
 				F3392F712529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.xcdatamodeld */,
@@ -239,6 +319,7 @@
 				F3392F8E2529A8630005ECDF /* Profile.storyboard */,
 				F34A9126252DD7F000FE71DB /* History.storyboard */,
 				F34A9128252DD8C800FE71DB /* Home.storyboard */,
+				F362AD6225710A170024276B /* Quiz.storyboard */,
 				F34A912A252DD90C00FE71DB /* Export.storyboard */,
 				F34A912C252DD91A00FE71DB /* Information.storyboard */,
 				F38363A5253B0F2500411ADE /* FillingProfile.storyboard */,
@@ -246,11 +327,64 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		F347C33F2552AEF4008486F9 /* ShortAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				F347C3402552AF29008486F9 /* ShortAnswerViewController.swift */,
+				F347C3422552AF40008486F9 /* ShortAnswerPresenter.swift */,
+				F347C3442552AF52008486F9 /* ShortAnswerIO.swift */,
+			);
+			path = ShortAnswer;
+			sourceTree = "<group>";
+		};
+		F362AD662571169F0024276B /* LongAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				F3CC15FC2577E27C00E529F2 /* LongAnswerViewController.swift */,
+				F3CC15FE2577E2EB00E529F2 /* LongAnswerPresenter.swift */,
+				F3CC16002577E32E00E529F2 /* LongAnswerIO.swift */,
+			);
+			path = LongAnswer;
+			sourceTree = "<group>";
+		};
+		F3791A13256812BE00AE35F0 /* BusinesLogic */ = {
+			isa = PBXGroup;
+			children = (
+				F3791A1525681ACD00AE35F0 /* QuestionsBank */,
+				F328E0E425306F90002F3D42 /* Entity */,
+				F328E0E8253077C6002F3D42 /* Service */,
+			);
+			path = BusinesLogic;
+			sourceTree = "<group>";
+		};
+		F3791A142568131A00AE35F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F328E0DA252E2F36002F3D42 /* Helpers */,
+				F328E0D9252E2F20002F3D42 /* Modules */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3791A1525681ACD00AE35F0 /* QuestionsBank */ = {
+			isa = PBXGroup;
+			children = (
+				F38363A9254027B000411ADE /* QuestionsBank.swift */,
+				F34CA49225656E9C00C990DF /* QuestionPartTwo.swift */,
+				F363002B257E68C600CDA770 /* FormationOfQuestions.swift */,
+			);
+			path = QuestionsBank;
+			sourceTree = "<group>";
+		};
 		F383639725349AA300411ADE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F383639525349A6700411ADE /* UserDefaults.swift */,
+				F383639525349A6700411ADE /* UserDefaults+Key.swift */,
 				F383639C2537320F00411ADE /* UIColor.swift */,
+				F377321F258A642A0073A3CF /* UIView.swift */,
+				F362AD7125737A2E0024276B /* Double.swift */,
+				F3CC16022577E96600E529F2 /* UIButton+setBackgroundColor.swift */,
+				F37732172589AFEB0073A3CF /* NoViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,6 +407,16 @@
 				F38363B02540587D00411ADE /* SelfEfficacyViewIO.swift */,
 			);
 			path = SelfEfficacy;
+			sourceTree = "<group>";
+		};
+		F3AE1989258B8A3F00061FFF /* DisplayAverageScore */ = {
+			isa = PBXGroup;
+			children = (
+				F32362D42580F8DA00D3C6C9 /* FinishQuizViewController.swift */,
+				F3AE1982258B888C00061FFF /* FinishQuizPresenter.swift */,
+				F3AE1985258B88A600061FFF /* FinishQuizIO.swift */,
+			);
+			path = DisplayAverageScore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +481,7 @@
 				F3392F75252982230005ECDF /* Assets.xcassets in Resources */,
 				F38363A6253B0F2500411ADE /* FillingProfile.storyboard in Resources */,
 				F3392F702529821E0005ECDF /* Main.storyboard in Resources */,
+				F362AD6325710A170024276B /* Quiz.storyboard in Resources */,
 				F34A912D252DD91A00FE71DB /* Information.storyboard in Resources */,
 				F34A9129252DD8C800FE71DB /* Home.storyboard in Resources */,
 				F34A912B252DD90C00FE71DB /* Export.storyboard in Resources */,
@@ -353,33 +498,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3392F8725299F610005ECDF /* SystemError.swift in Sources */,
+				F3CC16012577E32E00E529F2 /* LongAnswerIO.swift in Sources */,
 				F328E0E725306FF6002F3D42 /* String.swift in Sources */,
+				F3C0BF1D257BA77300C38C96 /* TabBarController.swift in Sources */,
+				F3773220258A642A0073A3CF /* UIView.swift in Sources */,
+				F362AD6525710D690024276B /* BeginQuestionnaireViewController.swift in Sources */,
 				F38363AF2540585400411ADE /* SelfEfficacyPresenter.swift in Sources */,
+				F3CC15FD2577E27C00E529F2 /* LongAnswerViewController.swift in Sources */,
 				F383639925372AD900411ADE /* ValidationError.swift in Sources */,
+				F362AD70257138620024276B /* PassedTestPartThree.swift in Sources */,
+				F347C3432552AF40008486F9 /* ShortAnswerPresenter.swift in Sources */,
 				F328E0FA2532491E002F3D42 /* EditProfilePresenter.swift in Sources */,
 				F328E0F5253236C5002F3D42 /* Int.swift in Sources */,
 				F3392F8225299AAB0005ECDF /* EntryPresenter.swift in Sources */,
 				F3392F8425299ABB0005ECDF /* EntryViewIO.swift in Sources */,
+				F3CC15FB2577D58900E529F2 /* HomeViewController.swift in Sources */,
 				F3392F802529991A0005ECDF /* EntryViewController.swift in Sources */,
 				F328E0F32532312D002F3D42 /* UIViewInput.swift in Sources */,
 				F383639B2537316E00411ADE /* DefaultButton.swift in Sources */,
+				F3791A0E25680BEC00AE35F0 /* AnswerPartTwo.swift in Sources */,
+				F362AD5F256E8D290024276B /* SubsidiaryViewController.swift in Sources */,
+				F34CA49325656E9C00C990DF /* QuestionPartTwo.swift in Sources */,
 				F383639D2537320F00411ADE /* UIColor.swift in Sources */,
+				F347C3452552AF52008486F9 /* ShortAnswerIO.swift in Sources */,
+				F3791A0C256808AE00AE35F0 /* Option.swift in Sources */,
 				F3392F692529821E0005ECDF /* AppDelegate.swift in Sources */,
+				F37732182589AFEB0073A3CF /* NoViewController.swift in Sources */,
 				F3392F6B2529821E0005ECDF /* SceneDelegate.swift in Sources */,
 				F328E0FC25324930002F3D42 /* EditViewIO.swift in Sources */,
+				F362AD6A2571382A0024276B /* AnswerPartOne.swift in Sources */,
 				F38363AC2540582200411ADE /* SelfEfficacyViewController.swift in Sources */,
+				F3AE1986258B88A600061FFF /* FinishQuizIO.swift in Sources */,
 				F328E0D4252E0E6C002F3D42 /* ProfileViewController.swift in Sources */,
 				F328E0F8253247C2002F3D42 /* EditProfileViewController.swift in Sources */,
+				F362AD6E257138520024276B /* PassedTestPartTwo.swift in Sources */,
+				F347C33C25496416008486F9 /* HistoryService.swift in Sources */,
+				F3CC16032577E96600E529F2 /* UIButton+setBackgroundColor.swift in Sources */,
+				F32362D52580F8DA00D3C6C9 /* FinishQuizViewController.swift in Sources */,
 				F328E0D8252E0E93002F3D42 /* ProfileViewIO.swift in Sources */,
+				F31DE76B255F05F80057A867 /* SelectableImage.swift in Sources */,
 				F3392F8B2529A1F70005ECDF /* Profile.swift in Sources */,
+				F363002E2580ECF600CDA770 /* UIProgressView.swift in Sources */,
+				F362AD68257135B70024276B /* Quiz.swift in Sources */,
+				F362AD7225737A2E0024276B /* Double.swift in Sources */,
 				F328E0F12531C891002F3D42 /* ProfileService.swift in Sources */,
-				F383639625349A6700411ADE /* UserDefaults.swift in Sources */,
+				F383639625349A6700411ADE /* UserDefaults+Key.swift in Sources */,
 				F383639F2539A7EC00411ADE /* AppRouter.swift in Sources */,
 				F328E0EF2531C87D002F3D42 /* ProfileServiceImp.swift in Sources */,
+				F31DE769255ED8AE0057A867 /* SelectableButton.swift in Sources */,
+				F363002C257E68C600CDA770 /* FormationOfQuestions.swift in Sources */,
 				F328E0D6252E0E82002F3D42 /* ProfilePresenter.swift in Sources */,
-				F38363A82540061D00411ADE /* DefaultButtonForTest.swift in Sources */,
+				F3AE1983258B888D00061FFF /* FinishQuizPresenter.swift in Sources */,
+				F347C33A254899C2008486F9 /* HistoryServiceImp.swift in Sources */,
+				F38363A82540061D00411ADE /* ButtonForQuiz.swift in Sources */,
+				F3CC15FF2577E2EB00E529F2 /* LongAnswerPresenter.swift in Sources */,
 				F38363AA254027B000411ADE /* QuestionsBank.swift in Sources */,
+				F347C3412552AF29008486F9 /* ShortAnswerViewController.swift in Sources */,
 				F3392F732529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.xcdatamodeld in Sources */,
+				F362AD6C257138420024276B /* PassedTestPartOne.swift in Sources */,
 				F38363B12540587D00411ADE /* SelfEfficacyViewIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

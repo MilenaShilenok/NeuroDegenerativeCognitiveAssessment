@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JSS-eK-N4M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JSS-eK-N4M">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -56,24 +59,41 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-6j-nE3">
-                                <rect key="frame" x="40" y="628" width="295" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="EDIT INFORMATION"/>
-                                <connections>
-                                    <segue destination="YzU-4d-XfT" kind="show" id="gVh-DL-2C8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2i-xh-axg">
-                                <rect key="frame" x="40" y="698" width="295" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2i-xh-axg" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="40" y="639" width="295" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8TW-ik-Ni7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="ERASE APP DATA"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledColor">
+                                        <color key="value" name="Red"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="deleteProfile:" destination="JlU-Rh-HAy" eventType="touchUpInside" id="RK3-bx-q3B"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-6j-nE3" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="40" y="569" width="295" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5xD-ou-IAN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="EDIT INFORMATION"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledColor">
+                                        <color key="value" name="Green"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="YzU-4d-XfT" kind="show" id="gVh-DL-2C8"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BOc-NL-5nK"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="u2i-xh-axg" firstAttribute="leading" secondItem="BOc-NL-5nK" secondAttribute="leading" constant="40" id="1yw-PW-Eyw"/>
                             <constraint firstItem="n9D-W4-QP9" firstAttribute="leading" secondItem="BOc-NL-5nK" secondAttribute="leading" constant="40" id="VRl-WN-QuJ"/>
@@ -82,14 +102,15 @@
                             <constraint firstItem="ttd-6j-nE3" firstAttribute="leading" secondItem="BOc-NL-5nK" secondAttribute="leading" constant="40" id="cIt-ZW-kSg"/>
                             <constraint firstItem="BOc-NL-5nK" firstAttribute="bottom" secondItem="u2i-xh-axg" secondAttribute="bottom" constant="40" id="f4a-Qe-bge"/>
                             <constraint firstItem="n9D-W4-QP9" firstAttribute="centerX" secondItem="UmV-Zl-NJP" secondAttribute="centerX" id="oCR-sj-i2e"/>
-                            <constraint firstItem="u2i-xh-axg" firstAttribute="top" secondItem="ttd-6j-nE3" secondAttribute="bottom" constant="30" id="upg-qy-HnE"/>
+                            <constraint firstItem="u2i-xh-axg" firstAttribute="top" secondItem="ttd-6j-nE3" secondAttribute="bottom" constant="20" id="upg-qy-HnE"/>
                             <constraint firstItem="u2i-xh-axg" firstAttribute="centerX" secondItem="UmV-Zl-NJP" secondAttribute="centerX" id="yyZ-vu-18C"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BOc-NL-5nK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Your profile" id="2Eh-GN-i3R"/>
                     <connections>
                         <outlet property="ageLabel" destination="8cV-k4-2bK" id="0MS-Fg-Yud"/>
+                        <outlet property="deleteButton" destination="u2i-xh-axg" id="Wd9-Yd-hVR"/>
+                        <outlet property="editButton" destination="ttd-6j-nE3" id="vrD-Cm-oOO"/>
                         <outlet property="emailLabel" destination="Elg-ea-rCy" id="hBT-cy-Uda"/>
                         <outlet property="nameLabel" destination="TEj-do-4XW" id="wwI-39-kP9"/>
                     </connections>
@@ -144,8 +165,11 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmD-fx-fYl" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
-                                <rect key="frame" x="40" y="668" width="295" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmD-fx-fYl" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="40" y="609" width="295" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n0a-Bh-MUr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="DONE"/>
                                 <connections>
@@ -153,7 +177,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XWd-J1-dOS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="E4D-W2-T1x" firstAttribute="leading" secondItem="XWd-J1-dOS" secondAttribute="leading" constant="40" id="LxF-2V-YyB"/>
                             <constraint firstItem="XWd-J1-dOS" firstAttribute="bottom" secondItem="QmD-fx-fYl" secondAttribute="bottom" constant="70" id="S8P-iC-bOy"/>
@@ -162,7 +187,6 @@
                             <constraint firstItem="QmD-fx-fYl" firstAttribute="leading" secondItem="XWd-J1-dOS" secondAttribute="leading" constant="40" id="dyO-eT-pRz"/>
                             <constraint firstItem="E4D-W2-T1x" firstAttribute="centerX" secondItem="LtQ-zF-0oR" secondAttribute="centerX" id="txq-Rz-Bhc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XWd-J1-dOS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit profile" id="LDg-cg-NuD"/>
                     <connections>
@@ -175,12 +199,13 @@
             </objects>
             <point key="canvasLocation" x="426" y="-1289"/>
         </scene>
-        <!--Your profile-->
+        <!--Navigation Controller-->
         <scene sceneID="oBE-rC-0C2">
             <objects>
                 <navigationController restorationIdentifier="ProfileViewController" storyboardIdentifier="ProfileViewController" automaticallyAdjustsScrollViewInsets="NO" id="JSS-eK-N4M" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your profile" image="house" catalog="system" id="uVb-jp-iUx"/>
+                    <tabBarItem key="tabBarItem" image="userIcon" selectedImage="userIcon" id="nbr-YT-frG"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qJt-lz-DKh">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -195,7 +220,27 @@
             <point key="canvasLocation" x="-1451" y="-1289"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="QmD-fx-fYl">
+            <size key="intrinsicContentSize" width="63" height="40"/>
+        </designable>
+        <designable name="ttd-6j-nE3">
+            <size key="intrinsicContentSize" width="203" height="40"/>
+        </designable>
+        <designable name="u2i-xh-axg">
+            <size key="intrinsicContentSize" width="176" height="40"/>
+        </designable>
+    </designables>
     <resources>
-        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="userIcon" width="24" height="24"/>
+        <namedColor name="Green">
+            <color red="0.2627450980392157" green="0.83921568627450982" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.93199998140335083" green="0.38499999046325684" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

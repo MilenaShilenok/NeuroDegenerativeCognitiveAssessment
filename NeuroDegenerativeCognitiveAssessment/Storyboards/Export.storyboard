@@ -27,7 +27,9 @@
         <scene sceneID="38a-7f-8u2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aAx-4j-ZB9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="shareArrowIcon" id="eM6-FD-mb5"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pUv-Ts-NK2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,4 +44,7 @@
             <point key="canvasLocation" x="128.98550724637681" y="86.383928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="shareArrowIcon" width="24" height="24"/>
+    </resources>
 </document>

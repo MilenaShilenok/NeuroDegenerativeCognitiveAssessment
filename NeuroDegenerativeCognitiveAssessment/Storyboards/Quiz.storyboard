@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Short Answer View Controller-->
+        <scene sceneID="4Xa-ZC-uQK">
+            <objects>
+                <viewController restorationIdentifier="ShortAnswerViewController" storyboardIdentifier="ShortAnswerViewController" id="5sL-OF-GCt" customClass="ShortAnswerViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0B6-Th-wVO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="708"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBL-Q5-30S">
+                                <rect key="frame" x="30" y="74" width="260" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4sC-zE-U1n">
+                                <rect key="frame" x="16" y="120" width="288" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="j5G-gB-2By">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-21-z5k">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="138"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-md-sng" customClass="SelectableImageView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bxc-AS-Bvt" customClass="SelectableImageView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="150" y="0.0" width="138" height="138"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uyQ-9U-Wmb">
+                                                <rect key="frame" x="0.0" y="150" width="288" height="138"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UP6-fp-gRX" customClass="SelectableImageView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uks-WK-Rup" customClass="SelectableImageView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="150" y="0.0" width="138" height="138"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Uks-WK-Rup" secondAttribute="height" id="ytP-Zw-LQ8"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="suO-w4-kJL">
+                                        <rect key="frame" x="0.0" y="288" width="288" height="112"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="S1O-j5-cPh">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="112"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-NG-1CJ" customClass="SelectableButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                        <color key="backgroundColor" red="0.79839385249999995" green="0.80629874209999997" blue="0.80629874209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="mBJ-CD-7mi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didSelectTextAnswer:" destination="5sL-OF-GCt" eventType="touchUpInside" id="k1j-gr-u0F"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7D-6J-8pY" customClass="SelectableButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="62" width="138" height="50"/>
+                                                        <color key="backgroundColor" red="0.80114346739999998" green="0.80758076909999998" blue="0.80749112369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didSelectTextAnswer:" destination="5sL-OF-GCt" eventType="touchUpInside" id="r0X-ev-ZxE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0FY-Im-Dfd">
+                                                <rect key="frame" x="150" y="0.0" width="138" height="112"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlL-Qx-eTA" customClass="SelectableButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                        <color key="backgroundColor" red="0.80114346739999998" green="0.80758076909999998" blue="0.80749112369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didSelectTextAnswer:" destination="5sL-OF-GCt" eventType="touchUpInside" id="taz-9j-riG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcw-bB-3ig" customClass="SelectableButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="62" width="138" height="50"/>
+                                                        <color key="backgroundColor" red="0.80114346739999998" green="0.80758076909999998" blue="0.80749112369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didSelectTextAnswer:" destination="5sL-OF-GCt" eventType="touchUpInside" id="HND-eC-YkB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="L7z-pq-ge1">
+                                <rect key="frame" x="40" y="608" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YBJ-9m-0wo"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-eP-2YP" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="60" y="558" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wTd-si-WJn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="5sL-OF-GCt" eventType="touchUpInside" id="KHg-YC-FqK"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Nnk-so-Ehp" userLabel="ProgressStack View">
+                                <rect key="frame" x="20" y="658" width="280" height="5"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="IK3-Hc-MhV" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="re5-dm-hUK"/>
+                                        </constraints>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Wgw-Wf-Cm0" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="98.333333333333343" y="0.0" width="83.333333333333343" height="5"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DOM-Q7-oR3" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="196.66666666666666" y="0.0" width="83.333333333333343" height="5"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qmc-T9-wYK"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iBL-Q5-30S" firstAttribute="leading" secondItem="qmc-T9-wYK" secondAttribute="leading" constant="30" id="6xl-qS-WHF"/>
+                            <constraint firstAttribute="trailing" secondItem="4sC-zE-U1n" secondAttribute="trailing" constant="16" id="70M-1I-oaa"/>
+                            <constraint firstItem="4sC-zE-U1n" firstAttribute="leading" secondItem="qmc-T9-wYK" secondAttribute="leading" constant="16" id="DSv-eX-yGl"/>
+                            <constraint firstItem="iBL-Q5-30S" firstAttribute="top" secondItem="qmc-T9-wYK" secondAttribute="top" constant="30" id="GYL-RU-OtV"/>
+                            <constraint firstItem="Nnk-so-Ehp" firstAttribute="leading" secondItem="qmc-T9-wYK" secondAttribute="leading" constant="20" id="HUe-fu-fnf"/>
+                            <constraint firstItem="Nnk-so-Ehp" firstAttribute="top" secondItem="L7z-pq-ge1" secondAttribute="bottom" constant="20" id="MtO-Kh-mvq"/>
+                            <constraint firstItem="4sC-zE-U1n" firstAttribute="top" secondItem="iBL-Q5-30S" secondAttribute="bottom" constant="16" id="RCZ-aC-oEA"/>
+                            <constraint firstItem="FCy-eP-2YP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4sC-zE-U1n" secondAttribute="bottom" constant="20" id="RQu-mc-Kng"/>
+                            <constraint firstItem="L7z-pq-ge1" firstAttribute="leading" secondItem="qmc-T9-wYK" secondAttribute="leading" constant="40" id="RRC-fl-taI"/>
+                            <constraint firstItem="L7z-pq-ge1" firstAttribute="centerX" secondItem="0B6-Th-wVO" secondAttribute="centerX" id="UAS-ba-gam"/>
+                            <constraint firstItem="FCy-eP-2YP" firstAttribute="centerX" secondItem="0B6-Th-wVO" secondAttribute="centerX" id="UUB-DF-5R1"/>
+                            <constraint firstItem="L7z-pq-ge1" firstAttribute="top" secondItem="FCy-eP-2YP" secondAttribute="bottom" constant="10" id="rhR-S4-TLM"/>
+                            <constraint firstItem="FCy-eP-2YP" firstAttribute="leading" secondItem="qmc-T9-wYK" secondAttribute="leading" constant="60" id="tiR-t8-Cix"/>
+                            <constraint firstItem="iBL-Q5-30S" firstAttribute="centerX" secondItem="0B6-Th-wVO" secondAttribute="centerX" id="vJc-5f-oVO"/>
+                            <constraint firstItem="qmc-T9-wYK" firstAttribute="bottom" secondItem="Nnk-so-Ehp" secondAttribute="bottom" constant="45" id="vV2-EM-1WL"/>
+                            <constraint firstItem="Nnk-so-Ehp" firstAttribute="centerX" secondItem="0B6-Th-wVO" secondAttribute="centerX" id="vh7-Eg-HCs"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="708"/>
+                    <connections>
+                        <outlet property="imageAnswersContainerView" destination="j5G-gB-2By" id="gUz-eF-heL"/>
+                        <outlet property="nextQuestionButton" destination="FCy-eP-2YP" id="MkA-za-No4"/>
+                        <outlet property="progressView" destination="Wgw-Wf-Cm0" id="0JB-tB-g8h"/>
+                        <outlet property="questionLabel" destination="iBL-Q5-30S" id="PAs-qF-fzv"/>
+                        <outlet property="stackView" destination="L7z-pq-ge1" id="G47-VU-ZnC"/>
+                        <outlet property="textAnswersContainerView" destination="suO-w4-kJL" id="ZDI-Lf-7Zm"/>
+                        <outletCollection property="textAnswersButtons" destination="b7D-6J-8pY" collectionClass="NSMutableArray" id="qhL-a3-GAR"/>
+                        <outletCollection property="textAnswersButtons" destination="kcw-bB-3ig" collectionClass="NSMutableArray" id="FfV-MW-EDR"/>
+                        <outletCollection property="textAnswersButtons" destination="Eeo-NG-1CJ" collectionClass="NSMutableArray" id="JBo-oW-lGb"/>
+                        <outletCollection property="textAnswersButtons" destination="RlL-Qx-eTA" collectionClass="NSMutableArray" id="dX4-du-yDl"/>
+                        <outletCollection property="answersImageViews" destination="UP6-fp-gRX" collectionClass="NSMutableArray" id="lY0-rM-cb1"/>
+                        <outletCollection property="answersImageViews" destination="Uks-WK-Rup" collectionClass="NSMutableArray" id="OCj-Wd-CAX"/>
+                        <outletCollection property="answersImageViews" destination="1aI-md-sng" collectionClass="NSMutableArray" id="vKQ-0C-7IZ"/>
+                        <outletCollection property="answersImageViews" destination="bxc-AS-Bvt" collectionClass="NSMutableArray" id="7RR-Cb-fkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbT-es-Zem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4100" y="71"/>
+        </scene>
+        <!--Long Answer View Controller-->
+        <scene sceneID="zHu-fR-DfY">
+            <objects>
+                <viewController restorationIdentifier="LongAnswerViewController" storyboardIdentifier="LongAnswerViewController" id="Sqx-dB-4Aq" customClass="LongAnswerViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="szI-RW-nnR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzs-kl-AQj">
+                                <rect key="frame" x="30" y="74" width="354" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4r-JZ-IIk" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="50" y="467.66666666666669" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HM9-cj-5cH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="next:" destination="Sqx-dB-4Aq" eventType="touchUpInside" id="jrg-mK-qAJ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ug7-GE-aat">
+                                <rect key="frame" x="30" y="124.00000000000003" width="354" height="313.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fQk-3h-vFz">
+                                <rect key="frame" x="20" y="812" width="374" height="5"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="wgC-gx-cwW" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="cxA-cl-ua3"/>
+                                        </constraints>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="zbk-KC-hlF" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="129.66666666666666" y="0.0" width="114.66666666666666" height="5"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-Va-ZG1" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="259.33333333333331" y="0.0" width="114.66666666666669" height="5"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UeM-RC-Nc3">
+                                <rect key="frame" x="40" y="762" width="334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nqn-PO-zal"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J6F-Ns-PUD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lzs-kl-AQj" firstAttribute="centerX" secondItem="szI-RW-nnR" secondAttribute="centerX" id="9BJ-mW-8TA"/>
+                            <constraint firstItem="J6F-Ns-PUD" firstAttribute="bottom" secondItem="fQk-3h-vFz" secondAttribute="bottom" constant="45" id="CNk-AI-qDT"/>
+                            <constraint firstItem="fQk-3h-vFz" firstAttribute="centerX" secondItem="szI-RW-nnR" secondAttribute="centerX" id="Cay-bH-CMJ"/>
+                            <constraint firstItem="lzs-kl-AQj" firstAttribute="top" secondItem="J6F-Ns-PUD" secondAttribute="top" constant="30" id="MBK-QN-4nQ"/>
+                            <constraint firstItem="v4r-JZ-IIk" firstAttribute="centerX" secondItem="szI-RW-nnR" secondAttribute="centerX" id="Q0a-cy-5vh"/>
+                            <constraint firstItem="fQk-3h-vFz" firstAttribute="leading" secondItem="J6F-Ns-PUD" secondAttribute="leading" constant="20" id="RcG-If-cWr"/>
+                            <constraint firstItem="fQk-3h-vFz" firstAttribute="top" secondItem="UeM-RC-Nc3" secondAttribute="bottom" constant="20" id="UKi-9K-Abm"/>
+                            <constraint firstItem="v4r-JZ-IIk" firstAttribute="leading" secondItem="J6F-Ns-PUD" secondAttribute="leading" constant="50" id="Usl-m6-QQ1"/>
+                            <constraint firstItem="lzs-kl-AQj" firstAttribute="leading" secondItem="J6F-Ns-PUD" secondAttribute="leading" constant="30" id="ZU1-ZG-unB"/>
+                            <constraint firstItem="UeM-RC-Nc3" firstAttribute="centerX" secondItem="szI-RW-nnR" secondAttribute="centerX" id="dC0-0c-Neb"/>
+                            <constraint firstItem="ug7-GE-aat" firstAttribute="height" secondItem="szI-RW-nnR" secondAttribute="height" multiplier="0.35" id="e0O-ro-FzV"/>
+                            <constraint firstItem="ug7-GE-aat" firstAttribute="leading" secondItem="J6F-Ns-PUD" secondAttribute="leading" constant="30" id="fYo-T4-Pr9"/>
+                            <constraint firstItem="v4r-JZ-IIk" firstAttribute="top" secondItem="ug7-GE-aat" secondAttribute="bottom" constant="30" id="hv2-LY-F0e"/>
+                            <constraint firstItem="UeM-RC-Nc3" firstAttribute="leading" secondItem="J6F-Ns-PUD" secondAttribute="leading" constant="40" id="k6G-MT-GrJ"/>
+                            <constraint firstItem="ug7-GE-aat" firstAttribute="centerX" secondItem="szI-RW-nnR" secondAttribute="centerX" id="nxj-K8-MJO"/>
+                            <constraint firstItem="ug7-GE-aat" firstAttribute="top" secondItem="lzs-kl-AQj" secondAttribute="bottom" constant="20" id="xDw-Iv-pI7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerTextView" destination="ug7-GE-aat" id="EHs-AF-UbZ"/>
+                        <outlet property="nextButton" destination="v4r-JZ-IIk" id="QMI-VA-gYR"/>
+                        <outlet property="questionLabel" destination="lzs-kl-AQj" id="0DL-k1-IbT"/>
+                        <outlet property="stackViewForButtonBar" destination="UeM-RC-Nc3" id="66Z-s1-Qp6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wha-Tl-6Ln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5001" y="71"/>
+        </scene>
+        <!--Finish Quiz View Controller-->
+        <scene sceneID="pCv-OK-hUh">
+            <objects>
+                <viewController restorationIdentifier="FinishQuizViewController" storyboardIdentifier="FinishQuizViewController" id="3dZ-o0-kCi" customClass="FinishQuizViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QKf-WD-kFm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for finishing the questionnaire!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh0-Lc-m68">
+                                <rect key="frame" x="30" y="64" width="354" height="64.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your scores are:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9T-jl-iXy">
+                                <rect key="frame" x="30" y="158.66666666666666" width="354" height="27.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQk-jP-d2V" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="30" y="792" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ut8-nG-f1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="GO TO HOME PAGE"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="enabledColor">
+                                        <color key="value" name="Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToHome:" destination="3dZ-o0-kCi" eventType="touchUpInside" id="iD0-HC-Yre"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kBg-8D-Tiu">
+                                <rect key="frame" x="117.33333333333333" y="206.33333333333337" width="179.33333333333337" height="212.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO6-XW-Ufp">
+                                        <rect key="frame" x="0.0" y="0.0" width="179.33333333333334" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b96-jc-RyO">
+                                        <rect key="frame" x="0.0" y="33.333333333333314" width="179.33333333333334" height="179.33333333333334"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="b96-jc-RyO" secondAttribute="height" id="w5p-zG-h9n"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="isf-bv-nZQ">
+                                <rect key="frame" x="25" y="439" width="364" height="145.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xVh-qR-sBm">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="145.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part 1:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMz-bO-48V">
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="25.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyA-1Z-xT4">
+                                                <rect key="frame" x="0.0" y="33.333333333333314" width="112" height="112"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hyA-1Z-xT4" secondAttribute="height" multiplier="1:1" id="hJX-ck-8Ou"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KcJ-Cd-HT3">
+                                        <rect key="frame" x="126" y="0.0" width="112" height="145.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part 2:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-ah-77C">
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="25.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1F-2l-ufJ">
+                                                <rect key="frame" x="0.0" y="33.333333333333314" width="112" height="112"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n1F-2l-ufJ" secondAttribute="height" multiplier="1:1" id="c6B-Aw-20P"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QXF-gT-mcn">
+                                        <rect key="frame" x="252" y="0.0" width="112" height="145.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part 3:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cI2-q0-j9N">
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="25.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ep-5K-qjV">
+                                                <rect key="frame" x="0.0" y="33.333333333333314" width="112" height="112"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9Ep-5K-qjV" secondAttribute="height" id="mOh-V4-1TX"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Axh-gh-Wbe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kBg-8D-Tiu" firstAttribute="top" secondItem="k9T-jl-iXy" secondAttribute="bottom" constant="20" id="0Pe-w5-Ui0"/>
+                            <constraint firstItem="9Ep-5K-qjV" firstAttribute="width" secondItem="QKf-WD-kFm" secondAttribute="height" multiplier="1:8" id="2gp-y7-U2i"/>
+                            <constraint firstItem="UQk-jP-d2V" firstAttribute="centerX" secondItem="QKf-WD-kFm" secondAttribute="centerX" id="Hrb-Po-l7N"/>
+                            <constraint firstItem="kBg-8D-Tiu" firstAttribute="centerX" secondItem="QKf-WD-kFm" secondAttribute="centerX" id="PoX-Qg-rLk"/>
+                            <constraint firstItem="Axh-gh-Wbe" firstAttribute="bottom" secondItem="UQk-jP-d2V" secondAttribute="bottom" constant="30" id="RdB-wS-0er"/>
+                            <constraint firstItem="isf-bv-nZQ" firstAttribute="top" secondItem="kBg-8D-Tiu" secondAttribute="bottom" constant="20" id="XKA-NP-MdM"/>
+                            <constraint firstItem="k9T-jl-iXy" firstAttribute="leading" secondItem="Axh-gh-Wbe" secondAttribute="leading" constant="30" id="dOh-Me-rnX"/>
+                            <constraint firstItem="eh0-Lc-m68" firstAttribute="top" secondItem="Axh-gh-Wbe" secondAttribute="top" constant="20" id="f8U-QK-IWK"/>
+                            <constraint firstItem="isf-bv-nZQ" firstAttribute="centerX" secondItem="QKf-WD-kFm" secondAttribute="centerX" id="hps-qx-5YQ"/>
+                            <constraint firstItem="k9T-jl-iXy" firstAttribute="centerX" secondItem="QKf-WD-kFm" secondAttribute="centerX" id="jSR-1l-daz"/>
+                            <constraint firstItem="k9T-jl-iXy" firstAttribute="top" secondItem="eh0-Lc-m68" secondAttribute="bottom" constant="30" id="l4L-Bl-jEc"/>
+                            <constraint firstItem="UQk-jP-d2V" firstAttribute="leading" secondItem="Axh-gh-Wbe" secondAttribute="leading" constant="30" id="rlR-Ig-2GF"/>
+                            <constraint firstItem="eh0-Lc-m68" firstAttribute="leading" secondItem="Axh-gh-Wbe" secondAttribute="leading" constant="30" id="x8z-Ku-Mt7"/>
+                            <constraint firstItem="eh0-Lc-m68" firstAttribute="centerX" secondItem="QKf-WD-kFm" secondAttribute="centerX" id="yNP-qV-nWS"/>
+                            <constraint firstItem="b96-jc-RyO" firstAttribute="width" secondItem="QKf-WD-kFm" secondAttribute="height" multiplier="1:5" id="zi4-Qf-JHl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="averageScoreView" destination="b96-jc-RyO" id="CHe-ck-pmw"/>
+                        <outletCollection property="circleViews" destination="hyA-1Z-xT4" collectionClass="NSMutableArray" id="Igh-fp-59t"/>
+                        <outletCollection property="circleViews" destination="n1F-2l-ufJ" collectionClass="NSMutableArray" id="V5B-oO-zKG"/>
+                        <outletCollection property="circleViews" destination="9Ep-5K-qjV" collectionClass="NSMutableArray" id="aIv-FC-cg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3e-Tg-Bbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5943.4782608695659" y="70.3125"/>
+        </scene>
+        <!--No View Controller-->
+        <scene sceneID="Rkr-Ru-LOJ">
+            <objects>
+                <viewController restorationIdentifier="NoViewController" storyboardIdentifier="NoViewController" id="vQy-mP-bR0" customClass="NoViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAg-iw-Qr5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ATz-5y-FVX">
+                                <rect key="frame" x="40" y="433" width="334" height="30"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6b-Yn-TuL">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="v6b-Yn-TuL" secondAttribute="height" id="LoV-Lh-pNl"/>
+                                    <constraint firstAttribute="width" constant="200" id="oPS-RV-PPl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dTq-3u-c0j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v6b-Yn-TuL" firstAttribute="centerY" secondItem="fAg-iw-Qr5" secondAttribute="centerY" id="LJR-Wd-PIH"/>
+                            <constraint firstItem="ATz-5y-FVX" firstAttribute="leading" secondItem="dTq-3u-c0j" secondAttribute="leading" constant="40" id="d3Z-yx-5GC"/>
+                            <constraint firstItem="ATz-5y-FVX" firstAttribute="centerX" secondItem="fAg-iw-Qr5" secondAttribute="centerX" id="mc3-vc-2e1"/>
+                            <constraint firstItem="v6b-Yn-TuL" firstAttribute="centerX" secondItem="fAg-iw-Qr5" secondAttribute="centerX" id="pFy-3q-xYX"/>
+                            <constraint firstItem="ATz-5y-FVX" firstAttribute="centerY" secondItem="fAg-iw-Qr5" secondAttribute="centerY" id="yu5-Gg-kE4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="ATz-5y-FVX" id="Toq-12-vuI"/>
+                        <outlet property="vieW" destination="v6b-Yn-TuL" id="9gw-zy-4mY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kdw-ur-Rka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6843" y="71"/>
+        </scene>
+        <!--Self Efficacy View Controller-->
+        <scene sceneID="dH1-ds-bFh">
+            <objects>
+                <viewController restorationIdentifier="SelfEfficacyViewController" storyboardIdentifier="SelfEfficacyViewController" id="Mdl-Vn-ZDb" customClass="SelfEfficacyViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xKv-3p-Fyf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-en-lDt" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="40" y="428" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F7g-XN-fTW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="goToNextQuestion:" destination="Mdl-Vn-ZDb" eventType="touchUpInside" id="pg9-zR-sb5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkD-fl-uwY">
+                                <rect key="frame" x="20" y="170.66666666666666" width="374" height="27.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using the scale provided, please rate how certain you are you can do the following actions:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J2-81-V8I">
+                                <rect key="frame" x="20" y="69" width="374" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2.7999999523162842" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-zp-g34">
+                                <rect key="frame" x="28" y="358" width="358" height="31"/>
+                                <connections>
+                                    <action selector="displaySelectedElement:" destination="Mdl-Vn-ZDb" eventType="valueChanged" id="YSe-Bc-byX"/>
+                                </connections>
+                            </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yh8-vq-VSt">
+                                <rect key="frame" x="30" y="312.66666666666669" width="354" height="20.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8N-PY-o3R">
+                                        <rect key="frame" x="0.0" y="0.0" width="32.333333333333336" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-zj-fAI">
+                                        <rect key="frame" x="32.333333333333336" y="0.0" width="32.000000000000007" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvO-DL-OHC">
+                                        <rect key="frame" x="64.333333333333329" y="0.0" width="32.333333333333329" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5A-os-CHC">
+                                        <rect key="frame" x="96.666666666666671" y="0.0" width="32.000000000000014" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpV-KH-6c0">
+                                        <rect key="frame" x="128.66666666666666" y="0.0" width="32.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8B-pW-WOc">
+                                        <rect key="frame" x="161" y="0.0" width="32" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTe-7o-ZQU">
+                                        <rect key="frame" x="193" y="0.0" width="32.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWC-4O-RQm">
+                                        <rect key="frame" x="225.33333333333334" y="0.0" width="32.000000000000028" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIW-08-Y5f">
+                                        <rect key="frame" x="257.33333333333331" y="0.0" width="32.333333333333314" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-bl-NLI">
+                                        <rect key="frame" x="289.66666666666669" y="0.0" width="32" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHT-qk-gpw">
+                                        <rect key="frame" x="321.66666666666669" y="0.0" width="32.333333333333314" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NjI-AT-acx">
+                                <rect key="frame" x="20" y="812" width="374" height="5"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c6b-6q-bBw" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="h93-7L-Ijg"/>
+                                        </constraints>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1KX-4j-oEr" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="129.66666666666666" y="0.0" width="114.66666666666666" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="Cfa-Ka-RSA"/>
+                                        </constraints>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W1S-cu-cIl" customClass="ProgressView" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                        <rect key="frame" x="259.33333333333331" y="0.0" width="114.66666666666669" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="tSH-gu-Ium"/>
+                                        </constraints>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="loT-2V-BRW">
+                                <rect key="frame" x="40" y="762" width="334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hMk-c0-fRR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xR6-YP-6pv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8J2-81-V8I" firstAttribute="top" secondItem="xR6-YP-6pv" secondAttribute="top" constant="25" id="Dzh-TO-uHz"/>
+                            <constraint firstItem="PqO-zp-g34" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="H6x-Ca-3dr"/>
+                            <constraint firstItem="NG4-en-lDt" firstAttribute="centerY" secondItem="xKv-3p-Fyf" secondAttribute="centerY" id="HQ0-Va-Ta2"/>
+                            <constraint firstItem="Yh8-vq-VSt" firstAttribute="trailing" secondItem="PqO-zp-g34" secondAttribute="trailing" id="Hzc-eL-SxW"/>
+                            <constraint firstItem="jkD-fl-uwY" firstAttribute="leading" secondItem="xR6-YP-6pv" secondAttribute="leading" constant="20" id="JIb-XE-1TH"/>
+                            <constraint firstItem="NjI-AT-acx" firstAttribute="top" secondItem="loT-2V-BRW" secondAttribute="bottom" constant="20" id="Jgo-aK-uNh"/>
+                            <constraint firstItem="jkD-fl-uwY" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="Juh-74-OX4"/>
+                            <constraint firstItem="jkD-fl-uwY" firstAttribute="top" secondItem="8J2-81-V8I" secondAttribute="bottom" constant="30" id="K3F-Ch-THp"/>
+                            <constraint firstItem="NG4-en-lDt" firstAttribute="top" secondItem="PqO-zp-g34" secondAttribute="bottom" constant="40" id="Q6Z-dJ-0sM"/>
+                            <constraint firstItem="Yh8-vq-VSt" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="QRp-Jy-fvo"/>
+                            <constraint firstItem="PqO-zp-g34" firstAttribute="leading" secondItem="xR6-YP-6pv" secondAttribute="leading" constant="30" id="Qw9-Lo-f8S"/>
+                            <constraint firstItem="loT-2V-BRW" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="V5c-1o-oCf"/>
+                            <constraint firstItem="PqO-zp-g34" firstAttribute="top" secondItem="Yh8-vq-VSt" secondAttribute="bottom" constant="25" id="WGa-Iy-v2S"/>
+                            <constraint firstItem="loT-2V-BRW" firstAttribute="leading" secondItem="xR6-YP-6pv" secondAttribute="leading" constant="40" id="be9-SP-NGQ"/>
+                            <constraint firstItem="8J2-81-V8I" firstAttribute="leading" secondItem="xR6-YP-6pv" secondAttribute="leading" constant="20" id="cNp-dr-Ons"/>
+                            <constraint firstItem="NjI-AT-acx" firstAttribute="leading" secondItem="xKv-3p-Fyf" secondAttribute="leading" constant="20" id="cuJ-uK-Koz"/>
+                            <constraint firstItem="xR6-YP-6pv" firstAttribute="bottom" secondItem="NjI-AT-acx" secondAttribute="bottom" constant="45" id="dfF-7t-wj3"/>
+                            <constraint firstItem="NG4-en-lDt" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="hUy-yx-3ZK"/>
+                            <constraint firstItem="NjI-AT-acx" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="ix2-8a-chn"/>
+                            <constraint firstItem="NG4-en-lDt" firstAttribute="leading" secondItem="xR6-YP-6pv" secondAttribute="leading" constant="40" id="pkq-M5-xTf"/>
+                            <constraint firstItem="PqO-zp-g34" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="rnu-MH-HLg"/>
+                            <constraint firstItem="8J2-81-V8I" firstAttribute="centerX" secondItem="xKv-3p-Fyf" secondAttribute="centerX" id="wzf-OI-d7S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nh5-CO-cIl"/>
+                    <connections>
+                        <outlet property="progressView" destination="c6b-6q-bBw" id="JYU-Li-pLO"/>
+                        <outlet property="questionLabel" destination="jkD-fl-uwY" id="knz-eH-2L2"/>
+                        <outlet property="slider" destination="PqO-zp-g34" id="RIf-2w-AAZ"/>
+                        <outlet property="stackView" destination="loT-2V-BRW" id="HaZ-Ui-Tdf"/>
+                        <outletCollection property="numberLabels" destination="C8N-PY-o3R" collectionClass="NSMutableArray" id="XeA-Mv-aZs"/>
+                        <outletCollection property="numberLabels" destination="c6P-zj-fAI" collectionClass="NSMutableArray" id="Xr7-8d-ab2"/>
+                        <outletCollection property="numberLabels" destination="QvO-DL-OHC" collectionClass="NSMutableArray" id="FfI-5g-IU1"/>
+                        <outletCollection property="numberLabels" destination="j5A-os-CHC" collectionClass="NSMutableArray" id="rdS-cY-X6a"/>
+                        <outletCollection property="numberLabels" destination="dpV-KH-6c0" collectionClass="NSMutableArray" id="fK6-ff-vOC"/>
+                        <outletCollection property="numberLabels" destination="D8B-pW-WOc" collectionClass="NSMutableArray" id="VHE-Ps-wkq"/>
+                        <outletCollection property="numberLabels" destination="qTe-7o-ZQU" collectionClass="NSMutableArray" id="CsB-XT-yf0"/>
+                        <outletCollection property="numberLabels" destination="vWC-4O-RQm" collectionClass="NSMutableArray" id="epY-33-f4z"/>
+                        <outletCollection property="numberLabels" destination="HIW-08-Y5f" collectionClass="NSMutableArray" id="dXn-eu-ZHu"/>
+                        <outletCollection property="numberLabels" destination="jcS-bl-NLI" collectionClass="NSMutableArray" id="63m-hU-TtM"/>
+                        <outletCollection property="numberLabels" destination="bHT-qk-gpw" collectionClass="NSMutableArray" id="fZI-5P-8dX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWh-H4-Tgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3207" y="71"/>
+        </scene>
+        <!--Subsidiary View Controller-->
+        <scene sceneID="CJR-PM-QSU">
+            <objects>
+                <viewController restorationIdentifier="SubsidiaryViewController" storyboardIdentifier="SubsidiaryViewController" id="ghi-zl-K9P" customClass="SubsidiaryViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yEf-hD-j0G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wz-sZ-YK2">
+                                <rect key="frame" x="30" y="123.99999999999999" width="354" height="31.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAN-Tr-9mW" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="30" y="762" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aMH-ML-X5P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="nextPart:" destination="ghi-zl-K9P" eventType="touchUpInside" id="cQe-eC-qfy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-fD-uuT">
+                                <rect key="frame" x="30" y="74" width="354" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lSc-EY-IPh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QAN-Tr-9mW" firstAttribute="centerX" secondItem="yEf-hD-j0G" secondAttribute="centerX" id="2vD-ht-A8d"/>
+                            <constraint firstItem="3bU-fD-uuT" firstAttribute="centerX" secondItem="yEf-hD-j0G" secondAttribute="centerX" id="Hl1-Z8-SIE"/>
+                            <constraint firstItem="4wz-sZ-YK2" firstAttribute="leading" secondItem="lSc-EY-IPh" secondAttribute="leading" constant="30" id="OXz-of-IBs"/>
+                            <constraint firstItem="3bU-fD-uuT" firstAttribute="top" secondItem="lSc-EY-IPh" secondAttribute="top" constant="30" id="Wuj-Y7-QtS"/>
+                            <constraint firstItem="3bU-fD-uuT" firstAttribute="leading" secondItem="lSc-EY-IPh" secondAttribute="leading" constant="30" id="Yhe-9b-vWK"/>
+                            <constraint firstItem="4wz-sZ-YK2" firstAttribute="top" secondItem="3bU-fD-uuT" secondAttribute="bottom" constant="20" id="eYs-CG-wWq"/>
+                            <constraint firstItem="4wz-sZ-YK2" firstAttribute="centerX" secondItem="yEf-hD-j0G" secondAttribute="centerX" id="fex-mr-OEm"/>
+                            <constraint firstItem="lSc-EY-IPh" firstAttribute="bottom" secondItem="QAN-Tr-9mW" secondAttribute="bottom" constant="50" id="hWJ-uQ-BDh"/>
+                            <constraint firstItem="QAN-Tr-9mW" firstAttribute="leading" secondItem="lSc-EY-IPh" secondAttribute="leading" constant="30" id="xNy-5s-mjc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="instructionLabel" destination="4wz-sZ-YK2" id="YRH-Oo-hJp"/>
+                        <outlet property="partLabel" destination="3bU-fD-uuT" id="D1R-wM-xtZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6J-De-A1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352" y="71"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="FCy-eP-2YP">
+            <size key="intrinsicContentSize" width="58" height="40"/>
+        </designable>
+        <designable name="NG4-en-lDt">
+            <size key="intrinsicContentSize" width="58" height="40"/>
+        </designable>
+        <designable name="QAN-Tr-9mW">
+            <size key="intrinsicContentSize" width="32" height="40"/>
+        </designable>
+        <designable name="UQk-jP-d2V">
+            <size key="intrinsicContentSize" width="201" height="40"/>
+        </designable>
+        <designable name="v4r-JZ-IIk">
+            <size key="intrinsicContentSize" width="58" height="40"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Blue">
+            <color red="0.27700001001358032" green="0.67500001192092896" blue="0.97200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

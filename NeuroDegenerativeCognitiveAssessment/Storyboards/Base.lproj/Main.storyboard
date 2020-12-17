@@ -9,7 +9,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="MCY-Fs-NJV">
             <objects>
-                <tabBarController id="3jT-ki-ZSK" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="TabBarController" storyboardIdentifier="TabBarController" id="3jT-ki-ZSK" customClass="TabBarController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7jY-do-qzL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -31,7 +31,7 @@
         <scene sceneID="4HY-ms-FHx">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="tQa-4S-6BC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="uLd-FC-nJE"/>
+                    <tabBarItem key="tabBarItem" id="uLd-FC-nJE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Tb-jo-3Up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
         <scene sceneID="1R9-m6-ZJk">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="cTT-IN-Uil" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SEK-za-gme"/>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="SEK-za-gme"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woQ-Gh-WsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 final class AppRouter {
-    
     enum ModuleType {
+        
         case profile
         case main
         case home
@@ -20,13 +20,13 @@ final class AppRouter {
         var storyboardName: String {
             switch self {
             case .profile:
-                return String.Storyboard.profile
+                return "Profile"
             case .main:
-                return String.Storyboard.main
+                return "Main"
             case .home:
-                return String.Storyboard.home
+                return "Home"
             case .fillingProfile:
-                return String.Storyboard.fillingProfile
+                return "FillingProfile"
             }
         }
     }
@@ -52,7 +52,7 @@ final class AppRouter {
         if !service.hasProfile {
             openModule(type: .fillingProfile)
         } else {
-            openModule(type: .home)
+            openModule(type: .main)
         }
     }
     
