@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "green-checkmark-and-red-cross-icon-symbol-of-approved-and-reject_110464-230.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "green-checkmark-and-red-cross-icon-symbol-of-approved-and-reject_110464-229.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "green-checkmark-and-red-cross-icon-symbol-of-approved-and-reject_110464-231.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

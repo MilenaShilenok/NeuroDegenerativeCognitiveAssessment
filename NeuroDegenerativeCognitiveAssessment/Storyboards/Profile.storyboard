@@ -23,7 +23,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXW-wZ-Hvw">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="27.666666666666668"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -35,7 +35,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-wC-9JJ">
                                         <rect key="frame" x="0.0" y="121.33333333333336" width="295" height="27.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -47,7 +47,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1au-YD-TFM">
                                         <rect key="frame" x="0.0" y="242.66666666666666" width="295" height="27.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -64,7 +64,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8TW-ik-Ni7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="ERASE APP DATA"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="enabledColor">
@@ -80,7 +80,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5xD-ou-IAN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="EDIT INFORMATION"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="enabledColor">
@@ -109,8 +109,6 @@
                     <navigationItem key="navigationItem" title="Your profile" id="2Eh-GN-i3R"/>
                     <connections>
                         <outlet property="ageLabel" destination="8cV-k4-2bK" id="0MS-Fg-Yud"/>
-                        <outlet property="deleteButton" destination="u2i-xh-axg" id="Wd9-Yd-hVR"/>
-                        <outlet property="editButton" destination="ttd-6j-nE3" id="vrD-Cm-oOO"/>
                         <outlet property="emailLabel" destination="Elg-ea-rCy" id="hBT-cy-Uda"/>
                         <outlet property="nameLabel" destination="TEj-do-4XW" id="wwI-39-kP9"/>
                     </connections>
@@ -170,7 +168,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="n0a-Bh-MUr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="DONE"/>
                                 <connections>
                                     <action selector="editProfile:" destination="YzU-4d-XfT" eventType="touchUpInside" id="hca-gH-HrF"/>
@@ -179,6 +177,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XWd-J1-dOS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="E4D-W2-T1x" firstAttribute="leading" secondItem="XWd-J1-dOS" secondAttribute="leading" constant="40" id="LxF-2V-YyB"/>
                             <constraint firstItem="XWd-J1-dOS" firstAttribute="bottom" secondItem="QmD-fx-fYl" secondAttribute="bottom" constant="70" id="S8P-iC-bOy"/>
@@ -222,13 +221,13 @@
     </scenes>
     <designables>
         <designable name="QmD-fx-fYl">
-            <size key="intrinsicContentSize" width="63" height="40"/>
+            <size key="intrinsicContentSize" width="64" height="40"/>
         </designable>
         <designable name="ttd-6j-nE3">
-            <size key="intrinsicContentSize" width="203" height="40"/>
+            <size key="intrinsicContentSize" width="213" height="40"/>
         </designable>
         <designable name="u2i-xh-axg">
-            <size key="intrinsicContentSize" width="176" height="40"/>
+            <size key="intrinsicContentSize" width="186" height="40"/>
         </designable>
     </designables>
     <resources>

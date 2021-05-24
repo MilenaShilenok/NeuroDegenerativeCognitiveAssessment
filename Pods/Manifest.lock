@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.1.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - CSV.swift (2.4.3)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (5.15.2):
+    - Kingfisher/Core (= 5.15.2)
+  - Kingfisher/Core (5.15.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - CSV.swift
+  - IQKeyboardManagerSwift
+  - Kingfisher
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - CSV.swift
+    - IQKeyboardManagerSwift
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  CSV.swift: d38741b349c067b4a6db42237cb0e2974d21ccac
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 1f60394409c6b916ce31474bcf73fdde6f3b9a7b
+
+PODFILE CHECKSUM: c8fd12eaf99b7b623ee2cce8db6fe57a4406d888
+
+COCOAPODS: 1.9.1

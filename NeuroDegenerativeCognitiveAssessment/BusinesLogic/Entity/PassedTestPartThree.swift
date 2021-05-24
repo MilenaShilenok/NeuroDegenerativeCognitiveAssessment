@@ -8,9 +8,22 @@
 
 import Foundation
 
-struct PassedTestPartThree {
+struct PassedTestPartThree: Codable {
     let question: String
     var answer: String
-    let averageScore: Int
     let gunningFogIndex: Double
+    
+    var averageScore: Int {
+        let base = 1.026
+        var result = base
+        var index = 1
+        while result < gunningFogIndex {
+            result *= base
+            index += 1
+        }
+        if index > 100 {
+            index = 100
+        }
+        return index
+    }
 }

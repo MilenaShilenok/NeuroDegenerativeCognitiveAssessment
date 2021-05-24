@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AnswerPartTwo {
+struct AnswerPartTwo: Codable {
     let question: String
     var option: Option
     let time: Double

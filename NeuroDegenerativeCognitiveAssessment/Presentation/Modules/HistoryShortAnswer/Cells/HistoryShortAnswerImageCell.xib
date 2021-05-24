@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="217" id="sWh-NJ-1yw" customClass="HistoryShortAnswerImageCell" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="602" height="217"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWh-NJ-1yw" id="Jvc-b4-86Q">
+                <rect key="frame" x="0.0" y="0.0" width="602" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbD-Xh-ojr">
+                        <rect key="frame" x="16" y="43" width="108.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2C-Je-wdY">
+                        <rect key="frame" x="176" y="105" width="50" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-Ne-yFx">
+                        <rect key="frame" x="176" y="135.5" width="50" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dW-Cm-v46">
+                        <rect key="frame" x="16" y="62" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="mND-dy-mr6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPI-tK-NtZ">
+                        <rect key="frame" x="16" y="10" width="576" height="23"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iOS-3R-Oqm">
+                        <rect key="frame" x="232" y="88" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Nv9-MB-mpC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CbD-Xh-ojr" firstAttribute="leading" secondItem="Jvc-b4-86Q" secondAttribute="leadingMargin" id="AV4-xa-iMn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hBc-Ne-yFx" secondAttribute="bottom" constant="45" id="AXM-Xt-XZy"/>
+                    <constraint firstItem="3dW-Cm-v46" firstAttribute="top" secondItem="CbD-Xh-ojr" secondAttribute="bottom" constant="10" id="FPY-q7-jtY"/>
+                    <constraint firstItem="3dW-Cm-v46" firstAttribute="leading" secondItem="Jvc-b4-86Q" secondAttribute="leadingMargin" id="Gmb-TP-xYz"/>
+                    <constraint firstItem="aPI-tK-NtZ" firstAttribute="top" secondItem="Jvc-b4-86Q" secondAttribute="top" constant="10" id="Jvh-fT-7Cr"/>
+                    <constraint firstItem="CbD-Xh-ojr" firstAttribute="top" secondItem="aPI-tK-NtZ" secondAttribute="bottom" constant="10" id="Zcz-jn-2h2"/>
+                    <constraint firstItem="hBc-Ne-yFx" firstAttribute="leading" secondItem="3dW-Cm-v46" secondAttribute="trailing" constant="30" id="cgT-Xt-dYq"/>
+                    <constraint firstItem="r2C-Je-wdY" firstAttribute="leading" secondItem="3dW-Cm-v46" secondAttribute="trailing" constant="30" id="gjN-V5-C4l"/>
+                    <constraint firstItem="hBc-Ne-yFx" firstAttribute="top" secondItem="r2C-Je-wdY" secondAttribute="bottom" constant="5" id="k9h-wh-DEz"/>
+                    <constraint firstItem="3dW-Cm-v46" firstAttribute="width" secondItem="3dW-Cm-v46" secondAttribute="height" multiplier="1:1" id="kSb-sa-G5u"/>
+                    <constraint firstAttribute="bottom" secondItem="3dW-Cm-v46" secondAttribute="bottom" constant="25" id="lnx-90-4ti"/>
+                    <constraint firstItem="iOS-3R-Oqm" firstAttribute="leading" secondItem="r2C-Je-wdY" secondAttribute="trailing" constant="6" id="p4o-yp-a6X"/>
+                    <constraint firstItem="aPI-tK-NtZ" firstAttribute="leading" secondItem="Jvc-b4-86Q" secondAttribute="leadingMargin" id="tIX-6J-v3e"/>
+                    <constraint firstItem="iOS-3R-Oqm" firstAttribute="centerY" secondItem="r2C-Je-wdY" secondAttribute="centerY" id="tR1-ZZ-aNv"/>
+                    <constraint firstItem="iOS-3R-Oqm" firstAttribute="width" secondItem="iOS-3R-Oqm" secondAttribute="height" multiplier="1:1" id="uUS-DL-AWB"/>
+                    <constraint firstAttribute="trailing" secondItem="aPI-tK-NtZ" secondAttribute="trailing" constant="10" id="x5B-JM-a4G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="answerImageView" destination="3dW-Cm-v46" id="d7S-fK-gQa"/>
+                <outlet property="isCorrectImageView" destination="iOS-3R-Oqm" id="get-ZF-Ip1"/>
+                <outlet property="isCorrectLabel" destination="r2C-Je-wdY" id="Jci-aw-Hi6"/>
+                <outlet property="questionLabel" destination="aPI-tK-NtZ" id="4sR-eq-Wpo"/>
+                <outlet property="responseTimeLabel" destination="hBc-Ne-yFx" id="3fD-AZ-c25"/>
+            </connections>
+            <point key="canvasLocation" x="1201.875" y="12.147887323943662"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -6,7 +6,6 @@
 //  Copyright © 2020 Милена. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class QuestionsBank {
@@ -24,11 +23,7 @@ class QuestionsBank {
     }()
     
     var optionsPartTwo: [Option] = []
-    //lazy var optionsPartTwo: [Option] = {
-      //  initOptionsPartTwo()
-    //}()
-   // var optionsPartTwo: [String: Option] = [:]
-    
+   
     static let instance = QuestionsBank()
     private let bank = FormationOfQuestions.instance
     
@@ -150,26 +145,26 @@ class QuestionsBank {
         
         var questionsPartTwo: [QuestionPartTwo?]
        
-        let catQuestion = try? QuestionPartTwo(question: "Please identify the picture of a cat.", correctOption: cat.correctCopy())
-        let dogQuestion = try? QuestionPartTwo(question: "Please identify the picture of a dog.", correctOption: dog.correctCopy())
-        let raccoonQuestion = try? QuestionPartTwo(question: "Please identify the picture of a raccoon.", correctOption: raccoon.correctCopy())
-        let ratQuestion = try? QuestionPartTwo(question: "Please identify the picture of a rat.", correctOption: rat.correctCopy())
-        let elephantQuestion = try? QuestionPartTwo(question: "Please identify the picture of a elephant.", correctOption: elephant.correctCopy())
-        let giraffeQuestion = try? QuestionPartTwo(question: "Please identify the picture of a giraffe.", correctOption: giraffe.correctCopy())
-        let lionQuestion = try? QuestionPartTwo(question: "Please identify the picture of a lion.", correctOption: lion.correctCopy())
-        let hedgehogQuestion = try? QuestionPartTwo(question: "Please identify the picture of a hedgehog.", correctOption: hedgehog.correctCopy())
-        let rabbitQuestion = try? QuestionPartTwo(question: "Please identify the picture of a rabbit.", correctOption: rabbit.correctCopy())
-        let cowQuestion = try? QuestionPartTwo(question: "Please identify the picture of a cow.", correctOption: cow.correctCopy())
-        let zebraQuestion = try? QuestionPartTwo(question: "Please identify the picture of a zebra.", correctOption: zebra.correctCopy())
-        let pandaQuestion = try? QuestionPartTwo(question: "Please identify the picture of a panda.", correctOption: panda.correctCopy())
-        let tigerQuestion = try? QuestionPartTwo(question: "Please identify the picture of a tiger.", correctOption: tiger.correctCopy())
-        let owlQuestion = try? QuestionPartTwo(question: "Please identify the picture of a owl.", correctOption: owl.correctCopy())
-        let penguinQuestion = try? QuestionPartTwo(question: "Please identify the picture of a penguin.", correctOption: penguin.correctCopy())
-        let bearQuestion = try? QuestionPartTwo(question: "Please identify the picture of a bear.", correctOption: bear.correctCopy())
-        let deerQuestion = try? QuestionPartTwo(question: "Please identify the picture of a deer.", correctOption: deer.correctCopy())
-        let swanQuestion = try? QuestionPartTwo(question: "Please identify the picture of a swan.", correctOption: swan.correctCopy())
-        let squirrelQuestion = try? QuestionPartTwo(question: "Please identify the picture of a squirrel.", correctOption: squirrel.correctCopy())
-        let monkeyQuestion = try? QuestionPartTwo(question: "Please identify the picture of a monkey.", correctOption: monkey.correctCopy())
+        let catQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.catQuestion, correctOption: cat.correctCopy())
+        let dogQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.dogQuestion, correctOption: dog.correctCopy())
+        let raccoonQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.raccoonQuestion, correctOption: raccoon.correctCopy())
+        let ratQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.ratQuestion, correctOption: rat.correctCopy())
+        let elephantQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.elephantQuestion, correctOption: elephant.correctCopy())
+        let giraffeQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.giraffeQuestion, correctOption: giraffe.correctCopy())
+        let lionQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.lionQuestion, correctOption: lion.correctCopy())
+        let hedgehogQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.hedgehogQuestion, correctOption: hedgehog.correctCopy())
+        let rabbitQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.rabbitQuestion, correctOption: rabbit.correctCopy())
+        let cowQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.cowQuestion, correctOption: cow.correctCopy())
+        let zebraQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.zebraQuestion, correctOption: zebra.correctCopy())
+        let pandaQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.pandaQuestion, correctOption: panda.correctCopy())
+        let tigerQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.tigerQuestion, correctOption: tiger.correctCopy())
+        let owlQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.owlQuestion, correctOption: owl.correctCopy())
+        let penguinQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.penguinQuestion, correctOption: penguin.correctCopy())
+        let bearQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.bearQuestion, correctOption: bear.correctCopy())
+        let deerQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.deerQuestion, correctOption: deer.correctCopy())
+        let swanQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.swanQuestion, correctOption: swan.correctCopy())
+        let squirrelQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.squirrelQuestion, correctOption: squirrel.correctCopy())
+        let monkeyQuestion = try? QuestionPartTwo(question: String.QuestionsPartTwo.monkeyQuestion, correctOption: monkey.correctCopy())
 
         let question1 = try? QuestionPartTwo(question: "What is 46 - 14 ?", correctOption: answer1.correctCopy())
         let question2 = try? QuestionPartTwo(question: "What is 54 + 27 ?", correctOption: answer2.correctCopy())

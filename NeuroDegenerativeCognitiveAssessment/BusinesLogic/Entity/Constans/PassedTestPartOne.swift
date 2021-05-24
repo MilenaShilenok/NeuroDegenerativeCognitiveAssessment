@@ -8,7 +8,16 @@
 
 import Foundation
 
-struct PassedTestPartOne {
+struct PassedTestPartOne: Codable {
     var answers: [AnswerPartOne]
-    var averageScore: Int
+    
+    var averageScore: Int {
+        var summ = 0
+        answers.forEach { (value) in
+            summ += value.answer
+        }
+        let averageScore = summ * 10 / answers.count
+        return averageScore
+    }
+    
 }

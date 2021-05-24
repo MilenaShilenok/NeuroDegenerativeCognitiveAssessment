@@ -50,6 +50,4 @@ extension UIColor {
         }
         return closestColor
     }
-    
-
 }

@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Mc-st-3vC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Mc-st-3vC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Information-->
         <scene sceneID="vNd-uo-Gdk">
             <objects>
-                <viewController id="pis-vh-MDP" sceneMemberID="viewController">
+                <viewController id="pis-vh-MDP" customClass="InformationViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="68p-4K-2RI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ELL-fA-FBp">
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PfR-Z4-o2t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ELL-fA-FBp" firstAttribute="bottom" secondItem="PfR-Z4-o2t" secondAttribute="bottom" id="9gs-qD-6cC"/>
+                            <constraint firstItem="ELL-fA-FBp" firstAttribute="top" secondItem="PfR-Z4-o2t" secondAttribute="top" constant="10" id="fau-XW-XkQ"/>
+                            <constraint firstItem="ELL-fA-FBp" firstAttribute="trailing" secondItem="PfR-Z4-o2t" secondAttribute="trailing" id="jZT-pC-DWK"/>
+                            <constraint firstItem="ELL-fA-FBp" firstAttribute="leading" secondItem="PfR-Z4-o2t" secondAttribute="leading" id="syW-gV-eAZ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="enc-TX-tr3"/>
+                    <navigationItem key="navigationItem" title="Information" id="enc-TX-tr3"/>
+                    <connections>
+                        <outlet property="informationTableView" destination="ELL-fA-FBp" id="4VI-TP-kTW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2NR-Yf-LPM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,5 +63,8 @@
     </scenes>
     <resources>
         <image name="infoIcon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

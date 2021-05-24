@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UL4-Y2-6kI">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -15,37 +15,36 @@
             <objects>
                 <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="kDA-2j-VXY" customClass="HomeViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="70I-3G-kVI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMt-Ut-Ypq" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
-                                <rect key="frame" x="30" y="294.66666666666669" width="315" height="60"/>
+                                <rect key="frame" x="30" y="392" width="330" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="E9A-yq-apH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="BEGIN QUESTIONNAIRE"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="enabledColor">
                                         <color key="value" name="Blue"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="XBZ-2J-WOg" kind="show" id="Z3J-tw-bOU"/>
+                                    <action selector="goToNextViewController:" destination="kDA-2j-VXY" eventType="touchUpInside" id="qbo-SJ-SPA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-Vp-r8d">
-                                <rect key="frame" x="122" y="384.66666666666669" width="131" height="32"/>
+                                <rect key="frame" x="129.66666666666666" y="482" width="130.99999999999997" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHX-tt-4Do">
-                                <rect key="frame" x="30" y="431.66666666666669" width="315" height="120.00000000000006"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29X-Nc-YUy">
+                                <rect key="frame" x="30" y="534" width="330" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Q-yt-eKV">
-                                        <rect key="frame" x="20" y="20" width="275" height="24"/>
+                                        <rect key="frame" x="20" y="15" width="290" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -53,80 +52,44 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="Z4Q-yt-eKV" firstAttribute="leading" secondItem="UHX-tt-4Do" secondAttribute="leading" constant="20" id="6Qa-1d-kTG"/>
-                                    <constraint firstAttribute="height" constant="120" id="EX1-t5-Mjt"/>
-                                    <constraint firstItem="Z4Q-yt-eKV" firstAttribute="top" secondItem="UHX-tt-4Do" secondAttribute="top" constant="20" id="Fbu-mf-gYV"/>
-                                    <constraint firstItem="Z4Q-yt-eKV" firstAttribute="centerX" secondItem="UHX-tt-4Do" secondAttribute="centerX" id="p4J-Ra-GzT"/>
+                                    <constraint firstItem="Z4Q-yt-eKV" firstAttribute="leading" secondItem="29X-Nc-YUy" secondAttribute="leading" constant="20" id="IfH-X8-ri2"/>
+                                    <constraint firstItem="Z4Q-yt-eKV" firstAttribute="top" secondItem="29X-Nc-YUy" secondAttribute="top" constant="15" id="RcP-yE-LeO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z4Q-yt-eKV" secondAttribute="bottom" constant="15" id="jyK-Td-xaB"/>
+                                    <constraint firstItem="Z4Q-yt-eKV" firstAttribute="centerX" secondItem="29X-Nc-YUy" secondAttribute="centerX" id="oHm-cg-nLp"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="f8X-Xc-V8w">
+                                <rect key="frame" x="30" y="213.66666666666663" width="330" height="153.33333333333337"/>
+                                <color key="backgroundColor" name="White"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TCE-5Z-YOk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wMt-Ut-Ypq" firstAttribute="centerY" secondItem="70I-3G-kVI" secondAttribute="centerY" multiplier="8:10" id="1N6-yQ-7q7"/>
-                            <constraint firstItem="UHX-tt-4Do" firstAttribute="leading" secondItem="TCE-5Z-YOk" secondAttribute="leading" constant="30" id="7u1-cP-jen"/>
-                            <constraint firstItem="UHX-tt-4Do" firstAttribute="top" secondItem="lOu-Vp-r8d" secondAttribute="bottom" constant="15" id="8l2-GL-yCU"/>
+                            <constraint firstItem="wMt-Ut-Ypq" firstAttribute="centerY" secondItem="70I-3G-kVI" secondAttribute="centerY" id="1N6-yQ-7q7"/>
+                            <constraint firstItem="wMt-Ut-Ypq" firstAttribute="top" secondItem="f8X-Xc-V8w" secondAttribute="bottom" constant="25" id="1Z0-va-bRp"/>
+                            <constraint firstItem="29X-Nc-YUy" firstAttribute="centerX" secondItem="70I-3G-kVI" secondAttribute="centerX" id="3WT-25-saB"/>
+                            <constraint firstItem="f8X-Xc-V8w" firstAttribute="centerX" secondItem="70I-3G-kVI" secondAttribute="centerX" id="4Ub-fz-bl2"/>
                             <constraint firstItem="lOu-Vp-r8d" firstAttribute="centerX" secondItem="70I-3G-kVI" secondAttribute="centerX" id="Dji-RN-Vmz"/>
+                            <constraint firstItem="f8X-Xc-V8w" firstAttribute="leading" secondItem="TCE-5Z-YOk" secondAttribute="leading" constant="30" id="FOC-OT-eTb"/>
+                            <constraint firstItem="29X-Nc-YUy" firstAttribute="top" secondItem="lOu-Vp-r8d" secondAttribute="bottom" constant="20" id="Gd5-Dt-6dM"/>
                             <constraint firstItem="wMt-Ut-Ypq" firstAttribute="leading" secondItem="TCE-5Z-YOk" secondAttribute="leading" constant="30" id="UTV-8M-lFk"/>
+                            <constraint firstItem="f8X-Xc-V8w" firstAttribute="height" secondItem="70I-3G-kVI" secondAttribute="height" multiplier="10:55" id="aIM-Zv-Esv"/>
                             <constraint firstItem="lOu-Vp-r8d" firstAttribute="top" secondItem="wMt-Ut-Ypq" secondAttribute="bottom" constant="30" id="eNl-1e-wBv"/>
                             <constraint firstItem="wMt-Ut-Ypq" firstAttribute="centerX" secondItem="70I-3G-kVI" secondAttribute="centerX" id="jv0-r0-TLo"/>
-                            <constraint firstItem="UHX-tt-4Do" firstAttribute="centerX" secondItem="70I-3G-kVI" secondAttribute="centerX" id="zR5-Mk-79h"/>
+                            <constraint firstItem="29X-Nc-YUy" firstAttribute="leading" secondItem="TCE-5Z-YOk" secondAttribute="leading" constant="30" id="lII-cG-tKc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="n6I-S7-aw2"/>
                     <connections>
-                        <outlet property="beginQuestionnaireButton" destination="wMt-Ut-Ypq" id="Eg9-40-KUw"/>
+                        <outlet property="questionnaireButton" destination="wMt-Ut-Ypq" id="Eg9-40-KUw"/>
                         <outlet property="statusLabel" destination="Z4Q-yt-eKV" id="pER-Zb-OVl"/>
-                        <outlet property="statusView" destination="UHX-tt-4Do" id="BfJ-EE-tZ3"/>
+                        <outlet property="statusView" destination="29X-Nc-YUy" id="EQK-24-SL0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4c-KN-UMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="100"/>
-        </scene>
-        <!--Questionnaire-->
-        <scene sceneID="8iS-3C-DWI">
-            <objects>
-                <viewController id="XBZ-2J-WOg" customClass="BeginQuestionnaireViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="v6b-i8-FPg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSJ-AV-vh8">
-                                <rect key="frame" x="30" y="118" width="315" height="394"/>
-                                <string key="text">Please answer the next few questions as quickly as you can and to the best of your ability. The questionnaire will consist of 3 parts: Self-Efficacy, Short-Answer and Long-Answer questions.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg3-5C-ToQ" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
-                                <rect key="frame" x="30" y="629" width="315" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="K8p-y4-d4p"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="BEGIN"/>
-                                <connections>
-                                    <action selector="openNextScreen:" destination="XBZ-2J-WOg" eventType="touchUpInside" id="JFg-IT-r1J"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="S1p-KQ-qDO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="sg3-5C-ToQ" firstAttribute="centerX" secondItem="v6b-i8-FPg" secondAttribute="centerX" id="1VR-gn-Vuo"/>
-                            <constraint firstItem="qSJ-AV-vh8" firstAttribute="top" secondItem="S1p-KQ-qDO" secondAttribute="top" constant="30" id="OcL-i7-fw1"/>
-                            <constraint firstItem="sg3-5C-ToQ" firstAttribute="leading" secondItem="S1p-KQ-qDO" secondAttribute="leading" constant="30" id="WJQ-Ug-Qe0"/>
-                            <constraint firstItem="S1p-KQ-qDO" firstAttribute="bottom" secondItem="sg3-5C-ToQ" secondAttribute="bottom" constant="50" id="YFR-x9-0tZ"/>
-                            <constraint firstItem="qSJ-AV-vh8" firstAttribute="leading" secondItem="v6b-i8-FPg" secondAttribute="leading" constant="30" id="dVR-ZM-icS"/>
-                            <constraint firstItem="qSJ-AV-vh8" firstAttribute="centerX" secondItem="v6b-i8-FPg" secondAttribute="centerX" id="ubl-1f-NvE"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Questionnaire" id="zTR-iI-fH0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9RR-xf-bAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1815" y="100"/>
+            <point key="canvasLocation" x="797.60000000000002" y="99.753694581280797"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ife-CT-Vjc">
@@ -136,7 +99,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JYN-ru-Uz3">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -150,17 +113,18 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="sg3-5C-ToQ">
-            <size key="intrinsicContentSize" width="66" height="40"/>
-        </designable>
         <designable name="wMt-Ut-Ypq">
-            <size key="intrinsicContentSize" width="226" height="38"/>
+            <size key="intrinsicContentSize" width="30" height="35"/>
         </designable>
     </designables>
     <resources>
+        <image name="brainIcon" width="52" height="49.333332061767578"/>
         <image name="homeIcon" width="24" height="24"/>
         <namedColor name="Blue">
             <color red="0.27700001001358032" green="0.67500001192092896" blue="0.97200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

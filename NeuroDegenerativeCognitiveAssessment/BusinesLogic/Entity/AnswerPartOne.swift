@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct AnswerPartOne {
+struct AnswerPartOne: Codable {
     let question: String
     var answer: Int
+    let index: Int
 }

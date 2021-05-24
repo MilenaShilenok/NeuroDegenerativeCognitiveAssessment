@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MT1-ld-15w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MT1-ld-15w">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,6 @@
         <!--Entry View Controller-->
         <scene sceneID="YTn-jo-hzv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GSj-wp-DHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="MT1-ld-15w" customClass="EntryViewController" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OdK-RY-XOq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -36,9 +36,12 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJQ-Ua-HFZ" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
-                                <rect key="frame" x="30" y="773" width="354" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJQ-Ua-HFZ" customClass="DefaultButton" customModule="NeuroDegenerativeCognitiveAssessment" customModuleProvider="target">
+                                <rect key="frame" x="30" y="762" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sFY-7r-z6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="CONTINUE"/>
                                 <connections>
                                     <action selector="saveProfileButton:" destination="MT1-ld-15w" eventType="touchUpInside" id="WG3-AL-hx6"/>
@@ -57,6 +60,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zd6-IU-CBi"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="spG-0G-PAQ" firstAttribute="leading" secondItem="zd6-IU-CBi" secondAttribute="leading" constant="30" id="42x-Ld-gAW"/>
@@ -72,7 +76,6 @@
                             <constraint firstItem="spG-0G-PAQ" firstAttribute="top" secondItem="WpP-Bv-h6b" secondAttribute="bottom" constant="30" id="usn-1l-NYq"/>
                             <constraint firstItem="zd6-IU-CBi" firstAttribute="bottom" secondItem="VJQ-Ua-HFZ" secondAttribute="bottom" constant="50" id="vSO-Xk-rul"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zd6-IU-CBi"/>
                     </view>
                     <connections>
                         <outlet property="ageTextField" destination="2gN-Kh-dBL" id="cNd-DG-t9c"/>
@@ -80,8 +83,14 @@
                         <outlet property="nameTextField" destination="YAQ-Z5-unu" id="YJp-aC-9bh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSj-wp-DHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3175" y="-44"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="VJQ-Ua-HFZ">
+            <size key="intrinsicContentSize" width="124" height="41"/>
+        </designable>
+    </designables>
 </document>

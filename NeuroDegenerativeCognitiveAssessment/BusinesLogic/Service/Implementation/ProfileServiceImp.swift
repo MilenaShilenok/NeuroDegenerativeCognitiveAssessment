@@ -6,7 +6,8 @@
 //  Copyright © 2020 Милена. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import CoreData
 
 class ProfileServiceImp: ProfileService {
     private let defaults = UserDefaults.standard
@@ -50,6 +51,21 @@ class ProfileServiceImp: ProfileService {
         let defaults = UserDefaults.standard
         defaults.removeObject(forKey: UserDefaults.Key.savedUser)
         profile = nil
+        try? removeHistory()
     }
-
+    
+    private func removeHistory() throws {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            throw SystemError.noAccessToAppDelegate
+        }
+        let context = appDelegate.persistentContainer.viewContext
+        if let passedTests = try? context.fetch(PassedTest.fetchRequest()) {
+            try passedTests.forEach { (passedTest) in
+                guard let passedTestManagedObject = passedTest as? NSManagedObject else {
+                    throw SystemError.failedToDeleteHistory
+                }
+                context.delete(passedTestManagedObject)
+            }
+        }
+    }
 }

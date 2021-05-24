@@ -12,6 +12,14 @@ enum SystemError: LocalizedError {
     case somethingWentWrong
     case profileNotFound
     case averageScoreNotFond
+    case indexOutOfRange
+    case historyUnavailable
+    case failedFetchPassedTests
+    case encodingError
+    case noAccessToAppDelegate
+    case failedToDeleteHistory
+    case failedToCreateFile
+    case optionNotSelected
     case custom(String)
   
     var errorDescription: String? {
@@ -22,6 +30,22 @@ enum SystemError: LocalizedError {
             return String.Error.profileNotFound
         case .averageScoreNotFond:
             return String.Error.averageScoreNotFound
+        case .indexOutOfRange:
+            return String.Error.indexOutOfRange
+        case .historyUnavailable:
+            return String.Error.historyUnavailable
+        case .failedFetchPassedTests:
+            return String.Error.failedFetchPassedTests
+        case .encodingError:
+            return String.Error.encodingError
+        case .noAccessToAppDelegate:
+            return String.Error.noAccessToAppDelegate
+        case .failedToDeleteHistory:
+            return String.Error.failedToDeleteHistory
+        case .failedToCreateFile:
+            return String.Error.failedToCreateFile
+        case .optionNotSelected:
+            return String.Error.optionNotSelected
         case .custom(let message):
             return message
         }

@@ -6,7 +6,6 @@
 //  Copyright © 2020 Милена. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension Double {

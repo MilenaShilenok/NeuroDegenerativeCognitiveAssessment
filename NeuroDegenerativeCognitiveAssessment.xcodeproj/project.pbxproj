@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD522CAE4C92F961533F3F62 /* Pods_NeuroDegenerativeCognitiveAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5635D307B0E164335EAC3ADE /* Pods_NeuroDegenerativeCognitiveAssessment.framework */; };
+		F302F876258E0EF200AAC04F /* CircleWithValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302F875258E0EF200AAC04F /* CircleWithValueView.swift */; };
+		F302F879258E7AFE00AAC04F /* ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302F878258E7AFD00AAC04F /* ButtonStackView.swift */; };
+		F30A625525E7C5A200FCFF6C /* HeaderShortAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30A625425E7C5A100FCFF6C /* HeaderShortAnswerView.xib */; };
+		F30A625925E7C5D300FCFF6C /* HeaderShortAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A625825E7C5D300FCFF6C /* HeaderShortAnswerView.swift */; };
+		F30A626225E7DE3800FCFF6C /* HistoryShortAnswerImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30A626125E7DE3800FCFF6C /* HistoryShortAnswerImageCell.xib */; };
+		F30A626725E7E09200FCFF6C /* HistoryShortAnswerTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30A626625E7E09200FCFF6C /* HistoryShortAnswerTextCell.xib */; };
 		F31DE769255ED8AE0057A867 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DE768255ED8AD0057A867 /* SelectableButton.swift */; };
 		F31DE76B255F05F80057A867 /* SelectableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DE76A255F05F80057A867 /* SelectableImage.swift */; };
 		F32362D52580F8DA00D3C6C9 /* FinishQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32362D42580F8DA00D3C6C9 /* FinishQuizViewController.swift */; };
@@ -21,6 +28,7 @@
 		F328E0F8253247C2002F3D42 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0F7253247C2002F3D42 /* EditProfileViewController.swift */; };
 		F328E0FA2532491E002F3D42 /* EditProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0F92532491E002F3D42 /* EditProfilePresenter.swift */; };
 		F328E0FC25324930002F3D42 /* EditViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328E0FB25324930002F3D42 /* EditViewIO.swift */; };
+		F338C04025E4ED620093D637 /* HistorySelfEfficacyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F338C03F25E4ED620093D637 /* HistorySelfEfficacyCell.xib */; };
 		F3392F692529821E0005ECDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F682529821E0005ECDF /* AppDelegate.swift */; };
 		F3392F6B2529821E0005ECDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F6A2529821E0005ECDF /* SceneDelegate.swift */; };
 		F3392F702529821E0005ECDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3392F6E2529821E0005ECDF /* Main.storyboard */; };
@@ -33,16 +41,47 @@
 		F3392F8725299F610005ECDF /* SystemError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F8625299F610005ECDF /* SystemError.swift */; };
 		F3392F8B2529A1F70005ECDF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3392F8A2529A1F70005ECDF /* Profile.swift */; };
 		F3392F8F2529A8630005ECDF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3392F8E2529A8630005ECDF /* Profile.storyboard */; };
-		F347C33A254899C2008486F9 /* HistoryServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C339254899C2008486F9 /* HistoryServiceImp.swift */; };
-		F347C33C25496416008486F9 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C33B25496416008486F9 /* HistoryService.swift */; };
+		F342D19C25CEC06600DF539E /* LongAnswerServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D19B25CEC06600DF539E /* LongAnswerServiceImp.swift */; };
+		F342D19F25CEC07B00DF539E /* LongAnswerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342D19E25CEC07B00DF539E /* LongAnswerService.swift */; };
+		F3432AA2258F48A900C97871 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3432AA1258F48A900C97871 /* HomePresenter.swift */; };
+		F3432AA6258F48B800C97871 /* HomeViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3432AA5258F48B800C97871 /* HomeViewIO.swift */; };
+		F347C33A254899C2008486F9 /* QuizServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C339254899C2008486F9 /* QuizServiceImp.swift */; };
+		F347C33C25496416008486F9 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C33B25496416008486F9 /* QuizService.swift */; };
 		F347C3412552AF29008486F9 /* ShortAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C3402552AF29008486F9 /* ShortAnswerViewController.swift */; };
 		F347C3432552AF40008486F9 /* ShortAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C3422552AF40008486F9 /* ShortAnswerPresenter.swift */; };
 		F347C3452552AF52008486F9 /* ShortAnswerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F347C3442552AF52008486F9 /* ShortAnswerIO.swift */; };
+		F34A480E25D84BE40031C807 /* CognitiveBehaviorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A480D25D84BE40031C807 /* CognitiveBehaviorStatus.swift */; };
+		F34A481125D84CB00031C807 /* UITextView+setUpInitialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A481025D84CB00031C807 /* UITextView+setUpInitialState.swift */; };
+		F34A481825DBB9900031C807 /* HistoryShortAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A481725DBB9900031C807 /* HistoryShortAnswerViewController.swift */; };
+		F34A481C25DBB9A60031C807 /* HistoryShortAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A481B25DBB9A60031C807 /* HistoryShortAnswerPresenter.swift */; };
+		F34A481F25DBB9C00031C807 /* HistoryShortAnswerViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A481E25DBB9C00031C807 /* HistoryShortAnswerViewIO.swift */; };
+		F34A482525DBC62B0031C807 /* HistoryShortAnswerImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A482425DBC62B0031C807 /* HistoryShortAnswerImageCell.swift */; };
+		F34A482925DDBD880031C807 /* HistorySessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A482825DDBD870031C807 /* HistorySessionViewController.swift */; };
+		F34A482C25DDBDA10031C807 /* HistorySessionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A482B25DDBDA10031C807 /* HistorySessionPresenter.swift */; };
+		F34A482F25DDBDB90031C807 /* HistorySessionViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A482E25DDBDB90031C807 /* HistorySessionViewIO.swift */; };
+		F34A483225DE76610031C807 /* HistorySessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A483125DE76600031C807 /* HistorySessionCell.swift */; };
+		F34A483825DED8320031C807 /* HistorySelfEfficacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A483725DED8320031C807 /* HistorySelfEfficacyViewController.swift */; };
+		F34A483B25DED8570031C807 /* HistorySelfEfficacyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A483A25DED8570031C807 /* HistorySelfEfficacyPresenter.swift */; };
+		F34A483E25DED87E0031C807 /* HistorySelfEfficacyViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A483D25DED87E0031C807 /* HistorySelfEfficacyViewIO.swift */; };
+		F34A484125DED9B20031C807 /* HistoryLongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A484025DED9B20031C807 /* HistoryLongAnswerViewController.swift */; };
+		F34A484425DED9C50031C807 /* HistoryLongAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A484325DED9C50031C807 /* HistoryLongAnswerPresenter.swift */; };
+		F34A484725DED9D50031C807 /* HistoryLongAnswerViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A484625DED9D50031C807 /* HistoryLongAnswerViewIO.swift */; };
+		F34A484A25E01D620031C807 /* HistoryShortAnswerTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A484925E01D620031C807 /* HistoryShortAnswerTextCell.swift */; };
+		F34A484E25E1B1400031C807 /* HistorySelfEfficacyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A484D25E1B1400031C807 /* HistorySelfEfficacyCell.swift */; };
+		F34A485725E403F50031C807 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A485625E403F40031C807 /* HistoryViewController.swift */; };
+		F34A485A25E4040B0031C807 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A485925E4040B0031C807 /* HistoryPresenter.swift */; };
+		F34A485D25E4041C0031C807 /* HistoryViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A485C25E4041C0031C807 /* HistoryViewIO.swift */; };
+		F34A486025E409120031C807 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A485F25E409120031C807 /* HistoryCell.swift */; };
+		F34A488F25E4E8DC0031C807 /* HeaderSelfEfficacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34A488E25E4E8DC0031C807 /* HeaderSelfEfficacyView.swift */; };
+		F34A489425E4E8F60031C807 /* HeaderSelfEfficacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F34A489325E4E8F60031C807 /* HeaderSelfEfficacyView.xib */; };
 		F34A9127252DD7F000FE71DB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A9126252DD7F000FE71DB /* History.storyboard */; };
 		F34A9129252DD8C800FE71DB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A9128252DD8C800FE71DB /* Home.storyboard */; };
 		F34A912B252DD90C00FE71DB /* Export.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A912A252DD90C00FE71DB /* Export.storyboard */; };
 		F34A912D252DD91A00FE71DB /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34A912C252DD91A00FE71DB /* Information.storyboard */; };
 		F34CA49325656E9C00C990DF /* QuestionPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CA49225656E9C00C990DF /* QuestionPartTwo.swift */; };
+		F34D096626432645005FFE30 /* UIView+GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34D096526432645005FFE30 /* UIView+GestureRecognizer.swift */; };
+		F3554155259391EE00ABE045 /* SubsidiaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3554154259391EE00ABE045 /* SubsidiaryPresenter.swift */; };
+		F35541592593923200ABE045 /* SubsidiaryViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35541582593923200ABE045 /* SubsidiaryViewIO.swift */; };
 		F362AD5F256E8D290024276B /* SubsidiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */; };
 		F362AD6325710A170024276B /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362AD6225710A170024276B /* Quiz.storyboard */; };
 		F362AD6525710D690024276B /* BeginQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD6425710D690024276B /* BeginQuestionnaireViewController.swift */; };
@@ -54,8 +93,12 @@
 		F362AD7225737A2E0024276B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362AD7125737A2E0024276B /* Double.swift */; };
 		F363002C257E68C600CDA770 /* FormationOfQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363002B257E68C600CDA770 /* FormationOfQuestions.swift */; };
 		F363002E2580ECF600CDA770 /* UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363002D2580ECF600CDA770 /* UIProgressView.swift */; };
-		F37732182589AFEB0073A3CF /* NoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37732172589AFEB0073A3CF /* NoViewController.swift */; };
-		F3773220258A642A0073A3CF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377321F258A642A0073A3CF /* UIView.swift */; };
+		F3688EAC260F5A8D00A218D7 /* CurrentButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3688EAB260F5A8D00A218D7 /* CurrentButtonState.swift */; };
+		F36A24E525E8E82C00391ADD /* HistorySessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36A24E425E8E82C00391ADD /* HistorySessionCell.xib */; };
+		F36A24E925E90CD200391ADD /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36A24E825E90CD200391ADD /* HistoryCell.xib */; };
+		F36A24ED25EA5EC400391ADD /* UIView+setupFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36A24EC25EA5EC400391ADD /* UIView+setupFromNib.swift */; };
+		F37296D5262F46F800386E47 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37296D4262F46F700386E47 /* Information.swift */; };
+		F3773220258A642A0073A3CF /* UIView+drawCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377321F258A642A0073A3CF /* UIView+drawCircle.swift */; };
 		F3791A0C256808AE00AE35F0 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3791A0B256808AE00AE35F0 /* Option.swift */; };
 		F3791A0E25680BEC00AE35F0 /* AnswerPartTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3791A0D25680BEC00AE35F0 /* AnswerPartTwo.swift */; };
 		F383639625349A6700411ADE /* UserDefaults+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383639525349A6700411ADE /* UserDefaults+Key.swift */; };
@@ -69,17 +112,38 @@
 		F38363AC2540582200411ADE /* SelfEfficacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363AB2540582200411ADE /* SelfEfficacyViewController.swift */; };
 		F38363AF2540585400411ADE /* SelfEfficacyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363AE2540585400411ADE /* SelfEfficacyPresenter.swift */; };
 		F38363B12540587D00411ADE /* SelfEfficacyViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38363B02540587D00411ADE /* SelfEfficacyViewIO.swift */; };
+		F3845987260606C4003422EB /* HistoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3845986260606C4003422EB /* HistoryHeaderView.swift */; };
+		F384598A260606DF003422EB /* HistoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3845989260606DF003422EB /* HistoryHeaderView.xib */; };
+		F3ADE10F26031C0A005084C2 /* UITableViewCell+id+nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ADE10E26031C09005084C2 /* UITableViewCell+id+nib.swift */; };
 		F3AE1983258B888D00061FFF /* FinishQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE1982258B888C00061FFF /* FinishQuizPresenter.swift */; };
 		F3AE1986258B88A600061FFF /* FinishQuizIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE1985258B88A600061FFF /* FinishQuizIO.swift */; };
+		F3B341192611DAA300FFFEAC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B341182611DAA300FFFEAC /* Point.swift */; };
 		F3C0BF1D257BA77300C38C96 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C0BF1C257BA77300C38C96 /* TabBarController.swift */; };
+		F3C7046E261840BA00D7BCA4 /* ExportResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7046D261840B900D7BCA4 /* ExportResultsViewController.swift */; };
+		F3C704722618411900D7BCA4 /* ExportResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C704712618411900D7BCA4 /* ExportResultsPresenter.swift */; };
+		F3C704752618414A00D7BCA4 /* ExportResultsViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C704742618414A00D7BCA4 /* ExportResultsViewIO.swift */; };
 		F3CC15FB2577D58900E529F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC15FA2577D58900E529F2 /* HomeViewController.swift */; };
 		F3CC15FD2577E27C00E529F2 /* LongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC15FC2577E27C00E529F2 /* LongAnswerViewController.swift */; };
 		F3CC15FF2577E2EB00E529F2 /* LongAnswerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC15FE2577E2EB00E529F2 /* LongAnswerPresenter.swift */; };
 		F3CC16012577E32E00E529F2 /* LongAnswerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC16002577E32E00E529F2 /* LongAnswerIO.swift */; };
 		F3CC16032577E96600E529F2 /* UIButton+setBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CC16022577E96600E529F2 /* UIButton+setBackgroundColor.swift */; };
+		F3F79466262C05B8006CE2AD /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F79465262C05B8006CE2AD /* InformationViewController.swift */; };
+		F3F7946A262C070C006CE2AD /* InformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F79469262C070C006CE2AD /* InformationCell.swift */; };
+		F3F7946E262C0723006CE2AD /* InformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F7946D262C0723006CE2AD /* InformationCell.xib */; };
+		F3F79471262C0C03006CE2AD /* InformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F79470262C0C02006CE2AD /* InformationPresenter.swift */; };
+		F3F79474262C0C21006CE2AD /* InformationViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F79473262C0C21006CE2AD /* InformationViewIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393BDE0124E5C89E9B225522 /* Pods-NeuroDegenerativeCognitiveAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroDegenerativeCognitiveAssessment.debug.xcconfig"; path = "Target Support Files/Pods-NeuroDegenerativeCognitiveAssessment/Pods-NeuroDegenerativeCognitiveAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		5635D307B0E164335EAC3ADE /* Pods_NeuroDegenerativeCognitiveAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeuroDegenerativeCognitiveAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B444B0A69DB810FCAF297A /* Pods-NeuroDegenerativeCognitiveAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroDegenerativeCognitiveAssessment.release.xcconfig"; path = "Target Support Files/Pods-NeuroDegenerativeCognitiveAssessment/Pods-NeuroDegenerativeCognitiveAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		F302F875258E0EF200AAC04F /* CircleWithValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleWithValueView.swift; sourceTree = "<group>"; };
+		F302F878258E7AFD00AAC04F /* ButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStackView.swift; sourceTree = "<group>"; };
+		F30A625425E7C5A100FCFF6C /* HeaderShortAnswerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderShortAnswerView.xib; sourceTree = "<group>"; };
+		F30A625825E7C5D300FCFF6C /* HeaderShortAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderShortAnswerView.swift; sourceTree = "<group>"; };
+		F30A626125E7DE3800FCFF6C /* HistoryShortAnswerImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryShortAnswerImageCell.xib; sourceTree = "<group>"; };
+		F30A626625E7E09200FCFF6C /* HistoryShortAnswerTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryShortAnswerTextCell.xib; sourceTree = "<group>"; };
 		F31DE768255ED8AD0057A867 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
 		F31DE76A255F05F80057A867 /* SelectableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableImage.swift; sourceTree = "<group>"; };
 		F32362D42580F8DA00D3C6C9 /* FinishQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +158,7 @@
 		F328E0F7253247C2002F3D42 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		F328E0F92532491E002F3D42 /* EditProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePresenter.swift; sourceTree = "<group>"; };
 		F328E0FB25324930002F3D42 /* EditViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewIO.swift; sourceTree = "<group>"; };
+		F338C03F25E4ED620093D637 /* HistorySelfEfficacyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistorySelfEfficacyCell.xib; sourceTree = "<group>"; };
 		F3392F652529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroDegenerativeCognitiveAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3392F682529821E0005ECDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3392F6A2529821E0005ECDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,16 +173,47 @@
 		F3392F8625299F610005ECDF /* SystemError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemError.swift; sourceTree = "<group>"; };
 		F3392F8A2529A1F70005ECDF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F3392F8E2529A8630005ECDF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		F347C339254899C2008486F9 /* HistoryServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryServiceImp.swift; sourceTree = "<group>"; };
-		F347C33B25496416008486F9 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		F342D19B25CEC06600DF539E /* LongAnswerServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerServiceImp.swift; sourceTree = "<group>"; };
+		F342D19E25CEC07B00DF539E /* LongAnswerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerService.swift; sourceTree = "<group>"; };
+		F3432AA1258F48A900C97871 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F3432AA5258F48B800C97871 /* HomeViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewIO.swift; sourceTree = "<group>"; };
+		F347C339254899C2008486F9 /* QuizServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizServiceImp.swift; sourceTree = "<group>"; };
+		F347C33B25496416008486F9 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
 		F347C3402552AF29008486F9 /* ShortAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAnswerViewController.swift; sourceTree = "<group>"; };
 		F347C3422552AF40008486F9 /* ShortAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAnswerPresenter.swift; sourceTree = "<group>"; };
 		F347C3442552AF52008486F9 /* ShortAnswerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAnswerIO.swift; sourceTree = "<group>"; };
+		F34A480D25D84BE40031C807 /* CognitiveBehaviorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveBehaviorStatus.swift; sourceTree = "<group>"; };
+		F34A481025D84CB00031C807 /* UITextView+setUpInitialState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+setUpInitialState.swift"; sourceTree = "<group>"; };
+		F34A481725DBB9900031C807 /* HistoryShortAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryShortAnswerViewController.swift; sourceTree = "<group>"; };
+		F34A481B25DBB9A60031C807 /* HistoryShortAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryShortAnswerPresenter.swift; sourceTree = "<group>"; };
+		F34A481E25DBB9C00031C807 /* HistoryShortAnswerViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryShortAnswerViewIO.swift; sourceTree = "<group>"; };
+		F34A482425DBC62B0031C807 /* HistoryShortAnswerImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryShortAnswerImageCell.swift; sourceTree = "<group>"; };
+		F34A482825DDBD870031C807 /* HistorySessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySessionViewController.swift; sourceTree = "<group>"; };
+		F34A482B25DDBDA10031C807 /* HistorySessionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySessionPresenter.swift; sourceTree = "<group>"; };
+		F34A482E25DDBDB90031C807 /* HistorySessionViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySessionViewIO.swift; sourceTree = "<group>"; };
+		F34A483125DE76600031C807 /* HistorySessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySessionCell.swift; sourceTree = "<group>"; };
+		F34A483725DED8320031C807 /* HistorySelfEfficacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySelfEfficacyViewController.swift; sourceTree = "<group>"; };
+		F34A483A25DED8570031C807 /* HistorySelfEfficacyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySelfEfficacyPresenter.swift; sourceTree = "<group>"; };
+		F34A483D25DED87E0031C807 /* HistorySelfEfficacyViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySelfEfficacyViewIO.swift; sourceTree = "<group>"; };
+		F34A484025DED9B20031C807 /* HistoryLongAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLongAnswerViewController.swift; sourceTree = "<group>"; };
+		F34A484325DED9C50031C807 /* HistoryLongAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLongAnswerPresenter.swift; sourceTree = "<group>"; };
+		F34A484625DED9D50031C807 /* HistoryLongAnswerViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLongAnswerViewIO.swift; sourceTree = "<group>"; };
+		F34A484925E01D620031C807 /* HistoryShortAnswerTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryShortAnswerTextCell.swift; path = ../HistoryShortAnswerTextCell.swift; sourceTree = "<group>"; };
+		F34A484D25E1B1400031C807 /* HistorySelfEfficacyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySelfEfficacyCell.swift; sourceTree = "<group>"; };
+		F34A485625E403F40031C807 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F34A485925E4040B0031C807 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		F34A485C25E4041C0031C807 /* HistoryViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewIO.swift; sourceTree = "<group>"; };
+		F34A485F25E409120031C807 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		F34A488E25E4E8DC0031C807 /* HeaderSelfEfficacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSelfEfficacyView.swift; sourceTree = "<group>"; };
+		F34A489325E4E8F60031C807 /* HeaderSelfEfficacyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSelfEfficacyView.xib; sourceTree = "<group>"; };
 		F34A9126252DD7F000FE71DB /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		F34A9128252DD8C800FE71DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F34A912A252DD90C00FE71DB /* Export.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Export.storyboard; sourceTree = "<group>"; };
 		F34A912C252DD91A00FE71DB /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
 		F34CA49225656E9C00C990DF /* QuestionPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPartTwo.swift; sourceTree = "<group>"; };
+		F34D096526432645005FFE30 /* UIView+GestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GestureRecognizer.swift"; sourceTree = "<group>"; };
+		F3554154259391EE00ABE045 /* SubsidiaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidiaryPresenter.swift; sourceTree = "<group>"; };
+		F35541582593923200ABE045 /* SubsidiaryViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidiaryViewIO.swift; sourceTree = "<group>"; };
 		F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidiaryViewController.swift; sourceTree = "<group>"; };
 		F362AD6225710A170024276B /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		F362AD6425710D690024276B /* BeginQuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginQuestionnaireViewController.swift; sourceTree = "<group>"; };
@@ -129,8 +225,12 @@
 		F362AD7125737A2E0024276B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F363002B257E68C600CDA770 /* FormationOfQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormationOfQuestions.swift; sourceTree = "<group>"; };
 		F363002D2580ECF600CDA770 /* UIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressView.swift; sourceTree = "<group>"; };
-		F37732172589AFEB0073A3CF /* NoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoViewController.swift; sourceTree = "<group>"; };
-		F377321F258A642A0073A3CF /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F3688EAB260F5A8D00A218D7 /* CurrentButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentButtonState.swift; sourceTree = "<group>"; };
+		F36A24E425E8E82C00391ADD /* HistorySessionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistorySessionCell.xib; sourceTree = "<group>"; };
+		F36A24E825E90CD200391ADD /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		F36A24EC25EA5EC400391ADD /* UIView+setupFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+setupFromNib.swift"; sourceTree = "<group>"; };
+		F37296D4262F46F700386E47 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		F377321F258A642A0073A3CF /* UIView+drawCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawCircle.swift"; sourceTree = "<group>"; };
 		F3791A0B256808AE00AE35F0 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		F3791A0D25680BEC00AE35F0 /* AnswerPartTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerPartTwo.swift; sourceTree = "<group>"; };
 		F383639525349A6700411ADE /* UserDefaults+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Key.swift"; sourceTree = "<group>"; };
@@ -144,14 +244,26 @@
 		F38363AB2540582200411ADE /* SelfEfficacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfEfficacyViewController.swift; sourceTree = "<group>"; };
 		F38363AE2540585400411ADE /* SelfEfficacyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfEfficacyPresenter.swift; sourceTree = "<group>"; };
 		F38363B02540587D00411ADE /* SelfEfficacyViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfEfficacyViewIO.swift; sourceTree = "<group>"; };
+		F3845986260606C4003422EB /* HistoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeaderView.swift; sourceTree = "<group>"; };
+		F3845989260606DF003422EB /* HistoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryHeaderView.xib; sourceTree = "<group>"; };
+		F3ADE10E26031C09005084C2 /* UITableViewCell+id+nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+id+nib.swift"; sourceTree = "<group>"; };
 		F3AE1982258B888C00061FFF /* FinishQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizPresenter.swift; sourceTree = "<group>"; };
 		F3AE1985258B88A600061FFF /* FinishQuizIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizIO.swift; sourceTree = "<group>"; };
+		F3B341182611DAA300FFFEAC /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		F3C0BF1C257BA77300C38C96 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F3C7046D261840B900D7BCA4 /* ExportResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportResultsViewController.swift; sourceTree = "<group>"; };
+		F3C704712618411900D7BCA4 /* ExportResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportResultsPresenter.swift; sourceTree = "<group>"; };
+		F3C704742618414A00D7BCA4 /* ExportResultsViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportResultsViewIO.swift; sourceTree = "<group>"; };
 		F3CC15FA2577D58900E529F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3CC15FC2577E27C00E529F2 /* LongAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerViewController.swift; sourceTree = "<group>"; };
 		F3CC15FE2577E2EB00E529F2 /* LongAnswerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerPresenter.swift; sourceTree = "<group>"; };
 		F3CC16002577E32E00E529F2 /* LongAnswerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAnswerIO.swift; sourceTree = "<group>"; };
 		F3CC16022577E96600E529F2 /* UIButton+setBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setBackgroundColor.swift"; sourceTree = "<group>"; };
+		F3F79465262C05B8006CE2AD /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		F3F79469262C070C006CE2AD /* InformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCell.swift; sourceTree = "<group>"; };
+		F3F7946D262C0723006CE2AD /* InformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationCell.xib; sourceTree = "<group>"; };
+		F3F79470262C0C02006CE2AD /* InformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenter.swift; sourceTree = "<group>"; };
+		F3F79473262C0C21006CE2AD /* InformationViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,12 +271,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD522CAE4C92F961533F3F62 /* Pods_NeuroDegenerativeCognitiveAssessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308B203BBE6369FF85EDE679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5635D307B0E164335EAC3ADE /* Pods_NeuroDegenerativeCognitiveAssessment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E8C4AB958685EB6973FAC05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				393BDE0124E5C89E9B225522 /* Pods-NeuroDegenerativeCognitiveAssessment.debug.xcconfig */,
+				93B444B0A69DB810FCAF297A /* Pods-NeuroDegenerativeCognitiveAssessment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F30A625725E7C5A800FCFF6C /* Header View */ = {
+			isa = PBXGroup;
+			children = (
+				F30A625425E7C5A100FCFF6C /* HeaderShortAnswerView.xib */,
+				F30A625825E7C5D300FCFF6C /* HeaderShortAnswerView.swift */,
+			);
+			path = "Header View";
+			sourceTree = "<group>";
+		};
+		F30A625D25E7DDE700FCFF6C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F34A482425DBC62B0031C807 /* HistoryShortAnswerImageCell.swift */,
+				F30A626125E7DE3800FCFF6C /* HistoryShortAnswerImageCell.xib */,
+				F30A626625E7E09200FCFF6C /* HistoryShortAnswerTextCell.xib */,
+				F34A484925E01D620031C807 /* HistoryShortAnswerTextCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F328E0D2252E0D2B002F3D42 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,9 +329,16 @@
 			isa = PBXGroup;
 			children = (
 				F3C0BF1C257BA77300C38C96 /* TabBarController.swift */,
-				F3CC15FA2577D58900E529F2 /* HomeViewController.swift */,
-				F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */,
 				F362AD6425710D690024276B /* BeginQuestionnaireViewController.swift */,
+				F3F79464262C0565006CE2AD /* Information */,
+				F3C7046C2618406C00D7BCA4 /* Export */,
+				F34A485425E403BF0031C807 /* History */,
+				F34A482725DDBD4C0031C807 /* HistorySession */,
+				F34A483425DED7840031C807 /* HistorySelfEfficacy */,
+				F34A481625DBB95E0031C807 /* HistoryShortAnswer */,
+				F34A483525DED7A00031C807 /* HistoryLongAnswer */,
+				F3554157259391F500ABE045 /* Subsidiary Screen */,
+				F3432AA0258F47BD00C97871 /* HomeScreen */,
 				F3AE1989258B8A3F00061FFF /* DisplayAverageScore */,
 				F362AD662571169F0024276B /* LongAnswer */,
 				F347C33F2552AEF4008486F9 /* ShortAnswer */,
@@ -193,7 +350,7 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		F328E0DA252E2F36002F3D42 /* Helpers */ = {
+		F328E0DA252E2F36002F3D42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F328E0F22532312D002F3D42 /* UIViewInput.swift */,
@@ -202,8 +359,12 @@
 				F31DE768255ED8AD0057A867 /* SelectableButton.swift */,
 				F31DE76A255F05F80057A867 /* SelectableImage.swift */,
 				F363002D2580ECF600CDA770 /* UIProgressView.swift */,
+				F302F875258E0EF200AAC04F /* CircleWithValueView.swift */,
+				F302F878258E7AFD00AAC04F /* ButtonStackView.swift */,
+				F34A480D25D84BE40031C807 /* CognitiveBehaviorStatus.swift */,
+				F3688EAB260F5A8D00A218D7 /* CurrentButtonState.swift */,
 			);
-			path = Helpers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F328E0E425306F90002F3D42 /* Entity */ = {
@@ -219,6 +380,8 @@
 				F3392F8A2529A1F70005ECDF /* Profile.swift */,
 				F3791A0B256808AE00AE35F0 /* Option.swift */,
 				F362AD67257135B70024276B /* Quiz.swift */,
+				F3B341182611DAA300FFFEAC /* Point.swift */,
+				F37296D4262F46F700386E47 /* Information.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -237,7 +400,8 @@
 			children = (
 				F328E0EB25307823002F3D42 /* Implementation */,
 				F328E0F02531C891002F3D42 /* ProfileService.swift */,
-				F347C33B25496416008486F9 /* HistoryService.swift */,
+				F347C33B25496416008486F9 /* QuizService.swift */,
+				F342D19E25CEC07B00DF539E /* LongAnswerService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -246,7 +410,8 @@
 			isa = PBXGroup;
 			children = (
 				F328E0EE2531C87D002F3D42 /* ProfileServiceImp.swift */,
-				F347C339254899C2008486F9 /* HistoryServiceImp.swift */,
+				F347C339254899C2008486F9 /* QuizServiceImp.swift */,
+				F342D19B25CEC06600DF539E /* LongAnswerServiceImp.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -270,11 +435,22 @@
 			path = Errros;
 			sourceTree = "<group>";
 		};
+		F338C03E25E4ED510093D637 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F338C03F25E4ED620093D637 /* HistorySelfEfficacyCell.xib */,
+				F34A484D25E1B1400031C807 /* HistorySelfEfficacyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F3392F5C2529821E0005ECDF = {
 			isa = PBXGroup;
 			children = (
 				F3392F672529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment */,
 				F3392F662529821E0005ECDF /* Products */,
+				9E8C4AB958685EB6973FAC05 /* Pods */,
+				308B203BBE6369FF85EDE679 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,7 +468,7 @@
 				F38363A42539BF2800411ADE /* App */,
 				F3791A13256812BE00AE35F0 /* BusinesLogic */,
 				F383639725349AA300411ADE /* Extensions */,
-				F3791A142568131A00AE35F0 /* Views */,
+				F3791A142568131A00AE35F0 /* Presentation */,
 				F3392F8C2529A7B50005ECDF /* Storyboards */,
 				F3392F74252982230005ECDF /* Assets.xcassets */,
 				F3392F79252982230005ECDF /* Info.plist */,
@@ -327,6 +503,16 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		F3432AA0258F47BD00C97871 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F3CC15FA2577D58900E529F2 /* HomeViewController.swift */,
+				F3432AA1258F48A900C97871 /* HomePresenter.swift */,
+				F3432AA5258F48B800C97871 /* HomeViewIO.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		F347C33F2552AEF4008486F9 /* ShortAnswer */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +521,82 @@
 				F347C3442552AF52008486F9 /* ShortAnswerIO.swift */,
 			);
 			path = ShortAnswer;
+			sourceTree = "<group>";
+		};
+		F34A481625DBB95E0031C807 /* HistoryShortAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				F30A625D25E7DDE700FCFF6C /* Cells */,
+				F30A625725E7C5A800FCFF6C /* Header View */,
+				F34A481725DBB9900031C807 /* HistoryShortAnswerViewController.swift */,
+				F34A481B25DBB9A60031C807 /* HistoryShortAnswerPresenter.swift */,
+				F34A481E25DBB9C00031C807 /* HistoryShortAnswerViewIO.swift */,
+			);
+			path = HistoryShortAnswer;
+			sourceTree = "<group>";
+		};
+		F34A482725DDBD4C0031C807 /* HistorySession */ = {
+			isa = PBXGroup;
+			children = (
+				F36A24E325E8E7F600391ADD /* Cell */,
+				F34A482825DDBD870031C807 /* HistorySessionViewController.swift */,
+				F34A482B25DDBDA10031C807 /* HistorySessionPresenter.swift */,
+				F34A482E25DDBDB90031C807 /* HistorySessionViewIO.swift */,
+			);
+			path = HistorySession;
+			sourceTree = "<group>";
+		};
+		F34A483425DED7840031C807 /* HistorySelfEfficacy */ = {
+			isa = PBXGroup;
+			children = (
+				F338C03E25E4ED510093D637 /* Cell */,
+				F34A488D25E4E8C60031C807 /* HeaderView */,
+				F34A483725DED8320031C807 /* HistorySelfEfficacyViewController.swift */,
+				F34A483A25DED8570031C807 /* HistorySelfEfficacyPresenter.swift */,
+				F34A483D25DED87E0031C807 /* HistorySelfEfficacyViewIO.swift */,
+			);
+			path = HistorySelfEfficacy;
+			sourceTree = "<group>";
+		};
+		F34A483525DED7A00031C807 /* HistoryLongAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				F34A484025DED9B20031C807 /* HistoryLongAnswerViewController.swift */,
+				F34A484325DED9C50031C807 /* HistoryLongAnswerPresenter.swift */,
+				F34A484625DED9D50031C807 /* HistoryLongAnswerViewIO.swift */,
+			);
+			path = HistoryLongAnswer;
+			sourceTree = "<group>";
+		};
+		F34A485425E403BF0031C807 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F384598526060694003422EB /* HistoryHeaderView */,
+				F36A24E725E90C9200391ADD /* Cell */,
+				F34A485625E403F40031C807 /* HistoryViewController.swift */,
+				F34A485925E4040B0031C807 /* HistoryPresenter.swift */,
+				F34A485C25E4041C0031C807 /* HistoryViewIO.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		F34A488D25E4E8C60031C807 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F34A488E25E4E8DC0031C807 /* HeaderSelfEfficacyView.swift */,
+				F34A489325E4E8F60031C807 /* HeaderSelfEfficacyView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		F3554157259391F500ABE045 /* Subsidiary Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F362AD5E256E8D290024276B /* SubsidiaryViewController.swift */,
+				F3554154259391EE00ABE045 /* SubsidiaryPresenter.swift */,
+				F35541582593923200ABE045 /* SubsidiaryViewIO.swift */,
+			);
+			path = "Subsidiary Screen";
 			sourceTree = "<group>";
 		};
 		F362AD662571169F0024276B /* LongAnswer */ = {
@@ -347,6 +609,24 @@
 			path = LongAnswer;
 			sourceTree = "<group>";
 		};
+		F36A24E325E8E7F600391ADD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F34A483125DE76600031C807 /* HistorySessionCell.swift */,
+				F36A24E425E8E82C00391ADD /* HistorySessionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F36A24E725E90C9200391ADD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F34A485F25E409120031C807 /* HistoryCell.swift */,
+				F36A24E825E90CD200391ADD /* HistoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F3791A13256812BE00AE35F0 /* BusinesLogic */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,13 +637,13 @@
 			path = BusinesLogic;
 			sourceTree = "<group>";
 		};
-		F3791A142568131A00AE35F0 /* Views */ = {
+		F3791A142568131A00AE35F0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F328E0DA252E2F36002F3D42 /* Helpers */,
+				F328E0DA252E2F36002F3D42 /* Views */,
 				F328E0D9252E2F20002F3D42 /* Modules */,
 			);
-			path = Views;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		F3791A1525681ACD00AE35F0 /* QuestionsBank */ = {
@@ -381,10 +661,13 @@
 			children = (
 				F383639525349A6700411ADE /* UserDefaults+Key.swift */,
 				F383639C2537320F00411ADE /* UIColor.swift */,
-				F377321F258A642A0073A3CF /* UIView.swift */,
+				F377321F258A642A0073A3CF /* UIView+drawCircle.swift */,
 				F362AD7125737A2E0024276B /* Double.swift */,
 				F3CC16022577E96600E529F2 /* UIButton+setBackgroundColor.swift */,
-				F37732172589AFEB0073A3CF /* NoViewController.swift */,
+				F34A481025D84CB00031C807 /* UITextView+setUpInitialState.swift */,
+				F36A24EC25EA5EC400391ADD /* UIView+setupFromNib.swift */,
+				F3ADE10E26031C09005084C2 /* UITableViewCell+id+nib.swift */,
+				F34D096526432645005FFE30 /* UIView+GestureRecognizer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,6 +692,15 @@
 			path = SelfEfficacy;
 			sourceTree = "<group>";
 		};
+		F384598526060694003422EB /* HistoryHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				F3845986260606C4003422EB /* HistoryHeaderView.swift */,
+				F3845989260606DF003422EB /* HistoryHeaderView.xib */,
+			);
+			path = HistoryHeaderView;
+			sourceTree = "<group>";
+		};
 		F3AE1989258B8A3F00061FFF /* DisplayAverageScore */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +711,36 @@
 			path = DisplayAverageScore;
 			sourceTree = "<group>";
 		};
+		F3C7046C2618406C00D7BCA4 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7046D261840B900D7BCA4 /* ExportResultsViewController.swift */,
+				F3C704712618411900D7BCA4 /* ExportResultsPresenter.swift */,
+				F3C704742618414A00D7BCA4 /* ExportResultsViewIO.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		F3F79464262C0565006CE2AD /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				F3F79468262C06F4006CE2AD /* Cell */,
+				F3F79465262C05B8006CE2AD /* InformationViewController.swift */,
+				F3F79470262C0C02006CE2AD /* InformationPresenter.swift */,
+				F3F79473262C0C21006CE2AD /* InformationViewIO.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		F3F79468262C06F4006CE2AD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3F79469262C070C006CE2AD /* InformationCell.swift */,
+				F3F7946D262C0723006CE2AD /* InformationCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,9 +748,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3392F7C252982230005ECDF /* Build configuration list for PBXNativeTarget "NeuroDegenerativeCognitiveAssessment" */;
 			buildPhases = (
+				7E1B08BE8E537F3FDDAB2DDC /* [CP] Check Pods Manifest.lock */,
 				F3392F612529821E0005ECDF /* Sources */,
 				F3392F622529821E0005ECDF /* Frameworks */,
 				F3392F632529821E0005ECDF /* Resources */,
+				354B983456323DB6FDB42447 /* [CP] Embed Pods Frameworks */,
+				F3ADE11626033546005084C2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -478,84 +803,198 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3392F78252982230005ECDF /* LaunchScreen.storyboard in Resources */,
+				F338C04025E4ED620093D637 /* HistorySelfEfficacyCell.xib in Resources */,
 				F3392F75252982230005ECDF /* Assets.xcassets in Resources */,
 				F38363A6253B0F2500411ADE /* FillingProfile.storyboard in Resources */,
+				F30A625525E7C5A200FCFF6C /* HeaderShortAnswerView.xib in Resources */,
+				F34A489425E4E8F60031C807 /* HeaderSelfEfficacyView.xib in Resources */,
 				F3392F702529821E0005ECDF /* Main.storyboard in Resources */,
 				F362AD6325710A170024276B /* Quiz.storyboard in Resources */,
+				F36A24E925E90CD200391ADD /* HistoryCell.xib in Resources */,
 				F34A912D252DD91A00FE71DB /* Information.storyboard in Resources */,
 				F34A9129252DD8C800FE71DB /* Home.storyboard in Resources */,
 				F34A912B252DD90C00FE71DB /* Export.storyboard in Resources */,
+				F384598A260606DF003422EB /* HistoryHeaderView.xib in Resources */,
 				F34A9127252DD7F000FE71DB /* History.storyboard in Resources */,
+				F30A626725E7E09200FCFF6C /* HistoryShortAnswerTextCell.xib in Resources */,
+				F36A24E525E8E82C00391ADD /* HistorySessionCell.xib in Resources */,
 				F3392F8F2529A8630005ECDF /* Profile.storyboard in Resources */,
+				F30A626225E7DE3800FCFF6C /* HistoryShortAnswerImageCell.xib in Resources */,
+				F3F7946E262C0723006CE2AD /* InformationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		354B983456323DB6FDB42447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroDegenerativeCognitiveAssessment/Pods-NeuroDegenerativeCognitiveAssessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroDegenerativeCognitiveAssessment/Pods-NeuroDegenerativeCognitiveAssessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroDegenerativeCognitiveAssessment/Pods-NeuroDegenerativeCognitiveAssessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1B08BE8E537F3FDDAB2DDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeuroDegenerativeCognitiveAssessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3ADE11626033546005084C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3392F612529821E0005ECDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34A484725DED9D50031C807 /* HistoryLongAnswerViewIO.swift in Sources */,
 				F3392F8725299F610005ECDF /* SystemError.swift in Sources */,
+				F36A24ED25EA5EC400391ADD /* UIView+setupFromNib.swift in Sources */,
 				F3CC16012577E32E00E529F2 /* LongAnswerIO.swift in Sources */,
 				F328E0E725306FF6002F3D42 /* String.swift in Sources */,
+				F3432AA2258F48A900C97871 /* HomePresenter.swift in Sources */,
 				F3C0BF1D257BA77300C38C96 /* TabBarController.swift in Sources */,
-				F3773220258A642A0073A3CF /* UIView.swift in Sources */,
+				F3773220258A642A0073A3CF /* UIView+drawCircle.swift in Sources */,
 				F362AD6525710D690024276B /* BeginQuestionnaireViewController.swift in Sources */,
+				F3F7946A262C070C006CE2AD /* InformationCell.swift in Sources */,
+				F35541592593923200ABE045 /* SubsidiaryViewIO.swift in Sources */,
+				F34A484125DED9B20031C807 /* HistoryLongAnswerViewController.swift in Sources */,
+				F302F879258E7AFE00AAC04F /* ButtonStackView.swift in Sources */,
 				F38363AF2540585400411ADE /* SelfEfficacyPresenter.swift in Sources */,
+				F34A482F25DDBDB90031C807 /* HistorySessionViewIO.swift in Sources */,
+				F34A484425DED9C50031C807 /* HistoryLongAnswerPresenter.swift in Sources */,
+				F3ADE10F26031C0A005084C2 /* UITableViewCell+id+nib.swift in Sources */,
+				F342D19F25CEC07B00DF539E /* LongAnswerService.swift in Sources */,
+				F37296D5262F46F800386E47 /* Information.swift in Sources */,
 				F3CC15FD2577E27C00E529F2 /* LongAnswerViewController.swift in Sources */,
 				F383639925372AD900411ADE /* ValidationError.swift in Sources */,
+				F3F79466262C05B8006CE2AD /* InformationViewController.swift in Sources */,
+				F3F79471262C0C03006CE2AD /* InformationPresenter.swift in Sources */,
+				F30A625925E7C5D300FCFF6C /* HeaderShortAnswerView.swift in Sources */,
+				F3554155259391EE00ABE045 /* SubsidiaryPresenter.swift in Sources */,
 				F362AD70257138620024276B /* PassedTestPartThree.swift in Sources */,
+				F3845987260606C4003422EB /* HistoryHeaderView.swift in Sources */,
 				F347C3432552AF40008486F9 /* ShortAnswerPresenter.swift in Sources */,
 				F328E0FA2532491E002F3D42 /* EditProfilePresenter.swift in Sources */,
+				F34A485725E403F50031C807 /* HistoryViewController.swift in Sources */,
+				F302F876258E0EF200AAC04F /* CircleWithValueView.swift in Sources */,
 				F328E0F5253236C5002F3D42 /* Int.swift in Sources */,
 				F3392F8225299AAB0005ECDF /* EntryPresenter.swift in Sources */,
 				F3392F8425299ABB0005ECDF /* EntryViewIO.swift in Sources */,
 				F3CC15FB2577D58900E529F2 /* HomeViewController.swift in Sources */,
+				F34A481F25DBB9C00031C807 /* HistoryShortAnswerViewIO.swift in Sources */,
+				F34A482525DBC62B0031C807 /* HistoryShortAnswerImageCell.swift in Sources */,
+				F34A481125D84CB00031C807 /* UITextView+setUpInitialState.swift in Sources */,
 				F3392F802529991A0005ECDF /* EntryViewController.swift in Sources */,
+				F3C704722618411900D7BCA4 /* ExportResultsPresenter.swift in Sources */,
+				F34A481825DBB9900031C807 /* HistoryShortAnswerViewController.swift in Sources */,
 				F328E0F32532312D002F3D42 /* UIViewInput.swift in Sources */,
+				F34A481C25DBB9A60031C807 /* HistoryShortAnswerPresenter.swift in Sources */,
+				F34A480E25D84BE40031C807 /* CognitiveBehaviorStatus.swift in Sources */,
+				F34A485D25E4041C0031C807 /* HistoryViewIO.swift in Sources */,
 				F383639B2537316E00411ADE /* DefaultButton.swift in Sources */,
 				F3791A0E25680BEC00AE35F0 /* AnswerPartTwo.swift in Sources */,
 				F362AD5F256E8D290024276B /* SubsidiaryViewController.swift in Sources */,
 				F34CA49325656E9C00C990DF /* QuestionPartTwo.swift in Sources */,
+				F34A486025E409120031C807 /* HistoryCell.swift in Sources */,
+				F3F79474262C0C21006CE2AD /* InformationViewIO.swift in Sources */,
 				F383639D2537320F00411ADE /* UIColor.swift in Sources */,
 				F347C3452552AF52008486F9 /* ShortAnswerIO.swift in Sources */,
 				F3791A0C256808AE00AE35F0 /* Option.swift in Sources */,
+				F3432AA6258F48B800C97871 /* HomeViewIO.swift in Sources */,
+				F34A482925DDBD880031C807 /* HistorySessionViewController.swift in Sources */,
 				F3392F692529821E0005ECDF /* AppDelegate.swift in Sources */,
-				F37732182589AFEB0073A3CF /* NoViewController.swift in Sources */,
 				F3392F6B2529821E0005ECDF /* SceneDelegate.swift in Sources */,
+				F3C704752618414A00D7BCA4 /* ExportResultsViewIO.swift in Sources */,
 				F328E0FC25324930002F3D42 /* EditViewIO.swift in Sources */,
 				F362AD6A2571382A0024276B /* AnswerPartOne.swift in Sources */,
 				F38363AC2540582200411ADE /* SelfEfficacyViewController.swift in Sources */,
 				F3AE1986258B88A600061FFF /* FinishQuizIO.swift in Sources */,
 				F328E0D4252E0E6C002F3D42 /* ProfileViewController.swift in Sources */,
+				F34A483B25DED8570031C807 /* HistorySelfEfficacyPresenter.swift in Sources */,
+				F34A482C25DDBDA10031C807 /* HistorySessionPresenter.swift in Sources */,
+				F34A488F25E4E8DC0031C807 /* HeaderSelfEfficacyView.swift in Sources */,
 				F328E0F8253247C2002F3D42 /* EditProfileViewController.swift in Sources */,
 				F362AD6E257138520024276B /* PassedTestPartTwo.swift in Sources */,
-				F347C33C25496416008486F9 /* HistoryService.swift in Sources */,
+				F34A483E25DED87E0031C807 /* HistorySelfEfficacyViewIO.swift in Sources */,
+				F342D19C25CEC06600DF539E /* LongAnswerServiceImp.swift in Sources */,
+				F347C33C25496416008486F9 /* QuizService.swift in Sources */,
 				F3CC16032577E96600E529F2 /* UIButton+setBackgroundColor.swift in Sources */,
 				F32362D52580F8DA00D3C6C9 /* FinishQuizViewController.swift in Sources */,
 				F328E0D8252E0E93002F3D42 /* ProfileViewIO.swift in Sources */,
 				F31DE76B255F05F80057A867 /* SelectableImage.swift in Sources */,
 				F3392F8B2529A1F70005ECDF /* Profile.swift in Sources */,
 				F363002E2580ECF600CDA770 /* UIProgressView.swift in Sources */,
+				F34A484E25E1B1400031C807 /* HistorySelfEfficacyCell.swift in Sources */,
 				F362AD68257135B70024276B /* Quiz.swift in Sources */,
+				F34A483225DE76610031C807 /* HistorySessionCell.swift in Sources */,
 				F362AD7225737A2E0024276B /* Double.swift in Sources */,
+				F34A483825DED8320031C807 /* HistorySelfEfficacyViewController.swift in Sources */,
 				F328E0F12531C891002F3D42 /* ProfileService.swift in Sources */,
 				F383639625349A6700411ADE /* UserDefaults+Key.swift in Sources */,
 				F383639F2539A7EC00411ADE /* AppRouter.swift in Sources */,
 				F328E0EF2531C87D002F3D42 /* ProfileServiceImp.swift in Sources */,
+				F3B341192611DAA300FFFEAC /* Point.swift in Sources */,
 				F31DE769255ED8AE0057A867 /* SelectableButton.swift in Sources */,
+				F34A484A25E01D620031C807 /* HistoryShortAnswerTextCell.swift in Sources */,
 				F363002C257E68C600CDA770 /* FormationOfQuestions.swift in Sources */,
 				F328E0D6252E0E82002F3D42 /* ProfilePresenter.swift in Sources */,
 				F3AE1983258B888D00061FFF /* FinishQuizPresenter.swift in Sources */,
-				F347C33A254899C2008486F9 /* HistoryServiceImp.swift in Sources */,
+				F347C33A254899C2008486F9 /* QuizServiceImp.swift in Sources */,
+				F34A485A25E4040B0031C807 /* HistoryPresenter.swift in Sources */,
 				F38363A82540061D00411ADE /* ButtonForQuiz.swift in Sources */,
 				F3CC15FF2577E2EB00E529F2 /* LongAnswerPresenter.swift in Sources */,
+				F34D096626432645005FFE30 /* UIView+GestureRecognizer.swift in Sources */,
 				F38363AA254027B000411ADE /* QuestionsBank.swift in Sources */,
 				F347C3412552AF29008486F9 /* ShortAnswerViewController.swift in Sources */,
 				F3392F732529821E0005ECDF /* NeuroDegenerativeCognitiveAssessment.xcdatamodeld in Sources */,
+				F3688EAC260F5A8D00A218D7 /* CurrentButtonState.swift in Sources */,
 				F362AD6C257138420024276B /* PassedTestPartOne.swift in Sources */,
+				F3C7046E261840BA00D7BCA4 /* ExportResultsViewController.swift in Sources */,
 				F38363B12540587D00411ADE /* SelfEfficacyViewIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,7 +1071,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -686,7 +1125,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -698,10 +1137,12 @@
 		};
 		F3392F7D252982230005ECDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393BDE0124E5C89E9B225522 /* Pods-NeuroDegenerativeCognitiveAssessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NeuroDegenerativeCognitiveAssessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -715,10 +1156,12 @@
 		};
 		F3392F7E252982230005ECDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B444B0A69DB810FCAF297A /* Pods-NeuroDegenerativeCognitiveAssessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NeuroDegenerativeCognitiveAssessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

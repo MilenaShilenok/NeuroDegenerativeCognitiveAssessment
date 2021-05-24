@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Option {
-    enum OptionType {
-        case text
-        case image
+struct Option: Codable {
+    enum OptionType: Int, Codable {
+        case text = 0
+        case image = 1
     }
     
     let value: String

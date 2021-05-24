@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Quiz {
-    enum Stage {
+struct Quiz: Codable {
+    enum Stage: Int, Codable {
         case partOne
         case partTwo
         case partThree
@@ -19,6 +19,7 @@ struct Quiz {
     var partOne: PassedTestPartOne?
     var partTwo: PassedTestPartTwo?
     var partThree: PassedTestPartThree?
+    var lastLongAnswer: String?
     
     var stage: Stage {
         if partOne == nil {
@@ -42,10 +43,11 @@ struct Quiz {
         return completionDate != nil && partOne != nil && partThree != nil && partTwo != nil
     }
     
-    init(completionDate: Date? = nil, partOne: PassedTestPartOne? = nil, partTwo: PassedTestPartTwo? = nil, partThree: PassedTestPartThree? = nil) {
+    init(completionDate: Date? = nil, partOne: PassedTestPartOne? = nil, partTwo: PassedTestPartTwo? = nil, partThree: PassedTestPartThree? = nil, lastLongAnswer: String? = nil) {
         self.completionDate = completionDate
         self.partOne = partOne
         self.partTwo = partTwo
         self.partThree = partThree
+        self.lastLongAnswer = lastLongAnswer
     }
 }

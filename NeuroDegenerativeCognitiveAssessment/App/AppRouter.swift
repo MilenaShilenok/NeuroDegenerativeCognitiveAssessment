@@ -36,14 +36,15 @@ final class AppRouter {
     static let shared = AppRouter()
     
     private init() {
-           if #available(iOS 13.0, *) {
-               let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
-               window = sceneDelegate?.window
-           } else {
-               let appDelegate = UIApplication.shared.delegate as? AppDelegate
-               window = appDelegate?.window
-           }
-       }
+        // TODO: переделать работу с window
+        if #available(iOS 13.0, *) {
+            let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+            window = sceneDelegate?.window
+        } else {
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            window = appDelegate?.window
+        }
+    }
     
     
     func openInitialModule() {
