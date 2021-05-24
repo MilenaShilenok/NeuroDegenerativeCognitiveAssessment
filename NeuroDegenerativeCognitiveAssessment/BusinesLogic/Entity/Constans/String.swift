@@ -123,13 +123,14 @@ extension String {
     
     struct Information {
         static let question1 = "How does the app work?"
-        static let answer1 = "This application collects data Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        static let answer1 = "The user is asked to take a test consisting of three stages. The test can be taken no more than once every 2 weeks. The results of each test are evaluated on a one-hundred-point scale. The application does not care about the specific score that the user earned for a particular test, only the dynamics of changes in the number of points is important. Thus, if the user has passed 5 tests and each of the tests shows a worse result than the previous one, application can conclude that the user's disease is progressing and it is advisable to consult a doctor."
         static let question2 = "How are the scores calculated?"
-        static let answer2 = "This application collects data Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        static let question3 = "How is my information processed?"
-        static let answer3 = "This application collects data Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        static let question4 = "How is my information processed?"
-        static let answer4 = "Yes."
+        static let answer2 = "The test consists of 3 stages. During the first stage, the user evaluates himself. During the second stage, the application evaluates the correctness of the response and the speed of the reaction. During the third stage, the application calculates the number of points based on the gunning fog value, using a special formula."
+        static let question3 = "How much can I trust the app?"
+        static let answer3 = "The app evaluates only subjective results and cannot replace a doctor's consultation. The application is designed only to measure the dynamics of changes in the user's state."
+        static let question4 = "How do I save the results?"
+        static let answer4 = "For your convenience, a special functionality has been implemented that converts all your data to cvs format and offers to export it in a convenient way (send it to email, social networks or messengers, save it in files)"
+        
         static let date = "Date"
         static let averageScore = "Average score"
         static let partOne = "Part 1"
